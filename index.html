@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/zlh4kzy.css">
     <link rel="icon" type="image/x-icon" href="img/KKfavicon.png" />
     <!--<link rel="stylesheet" href="css/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="css/clicky-menus.css">
-    <script src="javascript/clicky-menus.js"></script> -->
 </head>
 
 <body class="bodyindex">
@@ -31,25 +29,25 @@
                 <p class="logotekst">Kennel Kildehunden</p>
             </div>
             <ul id="menu" class="navbar">
-                <li class="menupunkt"><a href="" class="menuer">Hvem er vi?</a></li>
+                <li class="menupunkt"><a href="#" class="menuer">Hvem er vi?</a></li>
                 <li class="menupunkt">
-                    <p class="menuer">Vores hunde<span onclick="navUL()" id="pilRoter"><img src="img/pil_ned.svg"
-                                class="billedehehe"></span></p>
+                    <a href="#" class="menuer">Vores hunde<span onclick="navUL()"><img src="img/pil_ned.svg"
+                                id="pilned"></span></a>
                     <ul id="ulListe">
                         <li><a href="">Hundeprofiler</a></li>
                         <li><a href="">Kommende kuld</a></li>
                     </ul>
                 </li>
                 <li class="menupunkt">
-                    <p class="menuer">Køb hund<span onclick="navUL()"><img src="img/pil_ned.svg"></span></p>
-                    <ul id="ulListe">
+                    <a href="#" class="menuer">Køb hund<span><img src="img/pil_ned.svg"></span></a>
+                    <ul class="ulListe2">
                         <li><a href="">Hvad skal der til?</a></li>
                         <li><a href="">Venteliste</a></li>
                     </ul>
                 </li>
                 <li class="menupunkt">
-                    <p class="menuer">Råd og vejledning<span onclick="navUL()"><img src="img/pil_ned.svg"></span></p>
-                    <ul id="ulListe">
+                    <a href="#" class="menuer">Råd og vejledning<span><img src="img/pil_ned.svg"></span></a>
+                    <ul class="ulListe3">
                         <li><a href="">FAQ</a></li>
                         <li><a href="">Foder</a></li>
                         <li><a href="">Træning</a></li>
@@ -57,45 +55,56 @@
                         <li><a href="">Forsikring</a></li>
                     </ul>
                 </li>
-                <li class="menupunkt"><a href="" class="menuer">Galleri</a>
+                <li class="menupunkt"><a href="#" class="menuer">Galleri</a>
                 </li>
             </ul>
         </nav>
     </header>
     <div id="instafeed" class="instating"></div>
     <footer>
-            <address>
+        <address>
+            <div class="adressecontainer">
                 <h4 class="kontaktadresse">Kontakt</h4>
                 <a href="mailto:kildehunden24@gmail.com"><span><img src="img/kontaktemail.png"
                             class="kildehundenmail"></span>kildehunden24@gmail.com</a>
-            </address>
-
-            <div class="logo_maerker">
-                <a href="#">
-                <img src="img/agria-maerke.png" class="agria_tooltip">
-            </a>
-            <a href="#">
-                <img src="img/bulldogklubben-maerke.png" class="bulldog_tooltip">
-            </a>
-            <a href="#">
-                <img src="img/FCI-maerke.png" class="fci_tooltip">
-            </a>
-            <a href="#">
-                <img src="img/dkk-uddannet-maerke.png">
-            </a>
-            <a href="#">
-                <img src="img/DKK-maerke.png">
-            </a>
+                <br>
+                <a href="https://goo.gl/maps/Qj7NRTH6eyiFj1iu8"><span><img src="img/hus-ikon.png"
+                            class="kildehundenadresse"></span>Silkeborg, 8600</a>
             </div>
+        </address>
 
-            <div class="some_ikoner">
-                <a href="#">
+        <div class="logo_maerker">
+            <a href="https://www.agria.dk/" class="maerker_tooltip">
+                <img src="img/agria-maerke.png">
+                <div class="maerker_tekst">Agria samarbejdspartner/hvalpeforsikring<br></span></div>
+            </a>
+            <a href="https://www.bulldogklubben.dk/" class="maerker_tooltip">
+                <img src="img/bulldogklubben-maerke.png">
+                <span class="maerker_tekst">Medlem af den ældste specialklub under DKK</span>
+            </a>
+            <a href="http://www.fci.be/en/" class="maerker_tooltip">
+                <img src="img/FCI-maerke.png">
+                <span class="maerker_tekst">Medlem af den internationale stambogsførende organisation</span>
+            </a>
+            <a href="https://www.dkk.dk/kurser-prover-og-traening/deltag-i-kurser-hos-dkk/opdr%C3%A6tteruddannelser"
+                class="maerker_tooltip">
+                <img src="img/dkk-uddannet-maerke.png">
+                <span class="maerker_tekst">Dansk Kennel Klubs opdrætter uddannelse siden 2015</span>
+            </a>
+            <a href="https://www.dkk.dk/alle-emner/kennelm%C3%A6rke" class="maerker_tooltip">
+                <img src="img/DKK-maerke.png">
+                <span class="maerker_tekst">Medlem af den nationale stambogsførende organisation</span>
+            </a>
+        </div>
+
+        <div class="some_ikoner">
+            <a href="#">
                 <img src="img/facebook-ikon.png">
             </a>
             <a href="#">
                 <img src="img/instagram-ikon.png">
             </a>
-            </div>
+        </div>
     </footer>
     <script type="text/javascript" src="javascript/tokengen.js"></script>
     <script type="text/javascript" src="javascript/app.js"></script>

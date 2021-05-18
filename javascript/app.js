@@ -16,11 +16,21 @@ function aabenLuk() {
   }
 }
 
+// Åben/luk navigation dropdown + rotér pil
 function navUL() {
+  // Åbner dropdown menu når man klikker på pil
   const aabennav = document.getElementById("ulListe");
   if (aabennav.style.display === "block") {
     aabennav.style.display = "none";
   } else {
     aabennav.style.display = "block";
   }
+  // Roterer pilen 180 grader når man åbner dropdown menu
+  const roterpil = document.getElementById("pilned");
+  if (roterpil.style.transform === "rotate(180deg)") {
+    roterpil.style.transform = "none";
+  } else {
+    roterpil.style.transform = "rotate(180deg)";
+  }
 }
+

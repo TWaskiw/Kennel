@@ -37,7 +37,7 @@
   }
 
 
-  /* FONTS */
+  /* Fonts */
   @font-face {
     font-family: 'Gabriola';
     font-style: normal;
@@ -45,11 +45,7 @@
     src: local('Gabriola'), url('fonts/gabriola Font Download.woff') format('woff');
   }
 
-  .bodyindex {
-    background-color: #F5EBE9;
-    font-family: haboro-soft, sans-serif;
-  }
-
+  /* Navigationsbar */
   #menu {
     list-style: none;
     list-style-type: none;
@@ -65,7 +61,8 @@
     z-index: 999;
   }
 
-  header, nav{
+  header,
+  nav {
     z-index: 999;
   }
 
@@ -104,7 +101,8 @@
     line-height: 50px;
     vertical-align: middle;
     text-align: center;
-    margin: 20px;
+    margin: 20px 10px 10px 20px;
+    padding-right: 10px;
     cursor: pointer;
   }
 
@@ -117,15 +115,25 @@
     display: none;
   }
 
+  .menupunkt span {
+    border-radius: 100%;
+  }
+
   .menupunkt ul {
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.32);
-    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.32);
-    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.32);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.32);
     display: none;
     line-height: normal;
   }
 
-  .menupunkt a, .menupunkt p, .menuer {
+  .menupunkt a,
+  .menupunkt p,
+  .menuer {
+    transition: all 0.2s ease;
+  }
+
+  #pilned {
     transition: all 0.2s ease;
   }
 
@@ -147,7 +155,8 @@
     z-index: 999;
   }
 
-  #menu li a, #menu li p {
+  #menu li a,
+  #menu li p {
     display: block;
     text-decoration: none;
     color: #000000;
@@ -176,11 +185,12 @@
       position: absolute;
     }
   }
+
   @media screen and (max-width:1048px) {
 
     #menu,
     .menupunkt {
-      margin-right: 10px;
+      margin-right: 5px;
     }
 
     .logotekstbillede {
@@ -188,7 +198,7 @@
     }
   }
 
-  @media screen and (max-width:912px) {
+  @media screen and (max-width:932px) {
     .bmenu {
       display: flex;
       position: sticky;
@@ -207,7 +217,6 @@
       display: none;
       width: 100%;
       margin: 1px;
-      margin-left: 10px !important;
       border-top: 1px solid black;
       border-left: 1px solid black;
     }
@@ -240,7 +249,13 @@
     }
   }
 
+  /* Background color på index */
+  .bodyindex {
+    background-color: #F5EBE9;
+    font-family: haboro-soft, sans-serif;
+  }
 
+  /* Instagram Basic Display API // Instafeed */
   .instating {
     display: flex;
     flex-wrap: wrap;
@@ -297,7 +312,6 @@
     opacity: 1;
   }
 
-  /* center text horizontally and vertically on image hover */
   .img-featured-container .description-container {
     color: #fff;
     font-size: 1em;
@@ -375,35 +389,49 @@
     }
   }
 
+  /* Footer */
   footer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     margin-bottom: 20px;
-    width: 90%;
+    min-width: 100%;
     margin: 0 auto;
+    clear: both;
   }
 
-  address, .logo_maerker, .some_ikoner, .some_ikoner a {
+  footer>.logo_maerker,
+  .some_ikoner,
+  address {
+    width: 33%;
+  }
+
+  .some_ikoner,
+  .logo_maerker {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin: 0 auto;
   }
 
   address {
-    flex-direction: column;
-    display: inline-flex;
-  }
-   .kontaktadresse {
-    font-weight: 600 !important;
-    font-size: 25px;
-    color: #A8C9EA;
     text-align: center;
   }
 
-  .kontaktadresse, address {
+  .adressecontainer {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .kontaktadresse {
+    font-weight: 600 !important;
+    font-size: 25px;
+    color: #A8C9EA;
+  }
+
+  .kontaktadresse,
+  address,
+  .logo_maerker {
     font-style: normal;
     font-family: haboro-soft, sans-serif;
   }
@@ -412,11 +440,42 @@
     text-decoration: underline;
     color: inherit;
     line-height: 30px;
-    vertical-align: middle;
-    text-align: center;
+    margin-top: 4px;
   }
 
-  .kildehundenmail {
+  .maerker_tooltip {
+    position: relative;
+    display: block;
+  }
+
+  /* Footer tooltips på mærker */
+  .maerker_tooltip .maerker_tekst {
+    visibility: hidden;
+    width: 120px;
+    background-color: #A8C9EA;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .maerker_tooltip:hover .maerker_tekst {
+    visibility: visible;
+  }
+
+  .maerker_tooltip .maerker_tekst {
+    width: 300px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -150px;
+    /* Use half of the width (120/2 = 60), to center the tooltip */
+  }
+
+  .kildehundenmail,
+  .kildehundenadresse {
     width: 25px;
     height: 25px;
     line-height: 25px;
@@ -425,14 +484,15 @@
     margin-right: 8px;
     filter: brightness(100%);
     -webkit-filter: brightness(100%);
-    -webkit-transition: all 0.3s ease-in-out;;
-    -moz-transition: all 0.3s ease-in-out;;
-    -o-transition: all 0.3s ease-in-out;;
-    -ms-transition: all 0.3s ease-in-out;;
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
 
-  .kildehundenmail:hover {
+  .kildehundenmail:hover,
+  .kildehundenadresse:hover {
     filter: brightness(80%);
     -webkit-filter: brightness(80%);
   }
@@ -441,49 +501,81 @@
     margin: 4px;
   }
 
-  .logo_maerker a img, .some_ikoner a img{
+  .logo_maerker a img,
+  .some_ikoner a img {
     width: 75px;
     filter: brightness(100%);
     -webkit-filter: brightness(100%);
-    -webkit-transition: all 0.3s ease-in-out;;
-    -moz-transition: all 0.3s ease-in-out;;
-    -o-transition: all 0.3s ease-in-out;;
-    -ms-transition: all 0.3s ease-in-out;;
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
 
-  .some_ikoner img:hover, .logo_maerker img:hover {
+  .some_ikoner img:hover,
+  .logo_maerker img:hover {
     filter: brightness(80%);
     -webkit-filter: brightness(80%);
     cursor: pointer;
   }
 
-  @media screen and (max-width:912px) {
+  @media screen and (max-width:932px) {
     footer {
       flex-direction: column;
     }
 
-    address, .logo_maerker, .some_ikoner {
-      padding-bottom: 30px;
+    .logo_maerker,
+    .some_ikoner {
       overflow-x: hidden;
-      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo_maerker,
+    address {
+      width: 100% !important;
+    }
+
+    address {
+      order: 1;
     }
 
     .some_ikoner {
-      width: 50%;
+      min-width: 50%;
+      order: 2;
+    }
+
+    .logo_maerker {
+      order: 3;
     }
 
     .logo_maerker a img {
       width: 60px;
     }
+
+    .kontaktadresse {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    address,
+    .some_ikoner {
+      margin-bottom: 10px;
+    }
   }
-/*
+
+  /*
   @media only screen and (max-width: 768px) {
     body {
       overflow: hidden;
     }
   }
 */
+
+  /* Købsprocessen */
   iframe {
     pointer-events: none !important;
   }
