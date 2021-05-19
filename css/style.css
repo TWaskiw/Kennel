@@ -1,10 +1,10 @@
-  /* --------------- GLOBAL --------------- */
-  .body {
+  /* --------------- Global --------------- */
+  body {
     scroll-behavior: smooth;
   }
 
 
-  /* CSS Reset */
+  /* --------------- CSS reset --------------- */
   html {
     box-sizing: border-box;
     font-size: 16px;
@@ -37,7 +37,7 @@
   }
 
 
-  /* Fonts */
+  /* --------------- Fonts --------------- */
   @font-face {
     font-family: 'Gabriola';
     font-style: normal;
@@ -45,7 +45,13 @@
     src: local('Gabriola'), url('fonts/gabriola Font Download.woff') format('woff');
   }
 
-  /* Navigationsbar */
+  /* --------------- Baggrundsfarve på index --------------- */
+  .bodyindex {
+    background-color: #F5EBE9;
+    font-family: haboro-soft, sans-serif;
+  }
+
+  /* --------------- Navigationsbar--------------- */
   #menu {
     list-style: none;
     list-style-type: none;
@@ -66,6 +72,11 @@
     z-index: 999;
   }
 
+  .navlogolink {
+    text-decoration: none;
+    color: #000000;
+  }
+
   .logotekstbillede {
     float: left;
     display: flex;
@@ -73,7 +84,6 @@
     justify-content: center;
     margin-left: 5%;
     margin-top: 20px;
-    font-family: haboro-soft, sans-serif;
     font-style: normal;
     letter-spacing: 1px;
   }
@@ -127,20 +137,6 @@
     line-height: normal;
   }
 
-  .menupunkt a,
-  .menupunkt p,
-  .menuer {
-    transition: all 0.2s ease;
-  }
-
-  #pilned {
-    transition: all 0.2s ease;
-  }
-
-  .menuer:hover {
-    opacity: 0.6;
-  }
-
   .menupunkt li a {
     background-color: #faf5f4;
     padding: 15px;
@@ -148,11 +144,6 @@
     vertical-align: middle;
     text-align: left;
     transition: all 0.3s ease;
-  }
-
-  .menupunkt li a:hover {
-    background-color: #e6e4e4;
-    z-index: 999;
   }
 
   #menu li a,
@@ -179,83 +170,33 @@
     z-index: 999;
   }
 
-  @media screen and (min-width:913px) {
-    .menupunkt:hover ul {
-      display: block;
-      position: absolute;
-    }
+  /* Menupunkt hovers */
+  .logotekstbillede,
+  .menupunkt a,
+  .menupunkt p,
+  .menuer,
+  #pilned1,
+  #pilned2,
+  #pilned3 {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
-  @media screen and (max-width:1048px) {
-
-    #menu,
-    .menupunkt {
-      margin-right: 5px;
-    }
-
-    .logotekstbillede {
-      margin-left: 10px;
-    }
+  .menupunkt li a:hover {
+    background-color: #e6e4e4;
+    z-index: 999;
   }
 
-  @media screen and (max-width:932px) {
-    .bmenu {
-      display: flex;
-      position: sticky;
-    }
-
-    .logotekstbillede {
-      margin: 5px;
-      margin-left: 10px;
-    }
-
-    .menupunkt span img {
-      display: inline-block;
-    }
-
-    #menu {
-      display: none;
-      width: 100%;
-      margin: 1px;
-      border-top: 1px solid black;
-      border-left: 1px solid black;
-    }
-
-    .menupunkt {
-      border-bottom: 1px solid black;
-      margin: 0px;
-    }
-
-    .menupunkt a,
-    .menupunkt p {
-      padding: 10px;
-      transition: none;
-    }
-
-    .menupunkt a:hover,
-    .menupunkt p:hover {
-      opacity: 1;
-    }
-
-    .logotekst {
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-
-    #menu ul li a {
-      min-width: 100%;
-      max-width: 100%;
-      padding: 20px;
-    }
+  .logotekstbillede:hover,
+  .menuer:hover {
+    opacity: 0.6;
+    cursor: pointer;
   }
 
-  /* Background color på index */
-  .bodyindex {
-    background-color: #F5EBE9;
-    font-family: haboro-soft, sans-serif;
-  }
-
-  /* Instagram Basic Display API // Instafeed */
+  /* --------------- Instagram Basic Display API // Instafeed --------------- */
   .instating {
     display: flex;
     flex-wrap: wrap;
@@ -284,16 +225,15 @@
     overflow: hidden;
     position: relative;
     margin: 8px;
-    transition: all 0.3s ease;
     border-radius: 4px;
     -webkit-box-shadow: 0px 3px 31px -1px rgba(0, 0, 0, 0.88);
     -moz-box-shadow: 0px 3px 31px -1px rgba(0, 0, 0, 0.88);
     box-shadow: 0px 3px 31px -1px rgba(0, 0, 0, 0.88);
-  }
-
-  .img-featured-container:hover {
-    transition: all 0.3s ease;
-    transform: translateY(-5px);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   .img-featured-container .img-backdrop {
@@ -305,17 +245,12 @@
     position: absolute;
     z-index: 1;
     opacity: 0;
-    transition: all 0.3s ease;
-  }
-
-  .img-featured-container:hover>.img-backdrop {
-    opacity: 1;
   }
 
   .img-featured-container .description-container {
     color: #fff;
     font-size: 1em;
-    padding: 0 30px;
+    padding: 0 10px;
     text-align: center;
     font-family: haboro-soft-condensed, sans-serif;
     font-weight: 700;
@@ -328,7 +263,11 @@
     transform-style: preserve-3d;
     z-index: 2;
     opacity: 0;
-    transition: all .2s ease;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
   }
 
   .img-featured-container .description-container .fa-instagram {
@@ -355,9 +294,27 @@
     font-size: 30px;
   }
 
+  .img-featured-container .description-container .caption {
+    display: block;
+  }
+
+  /* Instagram API // Instafeed hovers */
   .likes,
-  .comments {
-    transition: all .3s ease-in-out;
+  .comments,
+  .img-featured-container .img-backdrop {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .img-featured-container:hover {
+    transform: translateY(-5px);
+  }
+
+  .img-featured-container:hover>.img-backdrop {
+    opacity: 1;
   }
 
   .likes:hover {
@@ -369,27 +326,7 @@
     opacity: 0.8;
   }
 
-
-  .img-featured-container .description-container .caption {
-    display: block;
-  }
-
-  @media screen and (max-width:533px) {
-    .instating img {
-      width: 10em;
-    }
-
-    .img-featured-container .description-container {
-      font-size: 0.7em;
-    }
-
-    .likes,
-    .comments {
-      font-size: 20px !important;
-    }
-  }
-
-  /* Footer */
+  /* --------------- Footer --------------- */
   footer {
     display: flex;
     flex-direction: row;
@@ -433,7 +370,6 @@
   address,
   .logo_maerker {
     font-style: normal;
-    font-family: haboro-soft, sans-serif;
   }
 
   address a {
@@ -441,37 +377,6 @@
     color: inherit;
     line-height: 30px;
     margin-top: 4px;
-  }
-
-  .maerker_tooltip {
-    position: relative;
-    display: block;
-  }
-
-  /* Footer tooltips på mærker */
-  .maerker_tooltip .maerker_tekst {
-    visibility: hidden;
-    width: 120px;
-    background-color: #A8C9EA;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-  }
-
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .maerker_tooltip:hover .maerker_tekst {
-    visibility: visible;
-  }
-
-  .maerker_tooltip .maerker_tekst {
-    width: 300px;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -150px;
-    /* Use half of the width (120/2 = 60), to center the tooltip */
   }
 
   .kildehundenmail,
@@ -482,28 +387,74 @@
     vertical-align: middle;
     text-align: center;
     margin-right: 8px;
-    filter: brightness(100%);
-    -webkit-filter: brightness(100%);
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-  }
-
-  .kildehundenmail:hover,
-  .kildehundenadresse:hover {
-    filter: brightness(80%);
-    -webkit-filter: brightness(80%);
   }
 
   .logo_maerker img {
     margin: 4px;
   }
 
-  .logo_maerker a img,
+  .logo_maerker div img,
   .some_ikoner a img {
     width: 75px;
+  }
+
+  /* Footer tooltips på mærker */
+  .maerker_tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .maerker_tooltip .maerker_tekst {
+    visibility: hidden;
+    width: 200px;
+    background-color: #A8C9EA;
+    color: #fff;
+    padding: 8px 5px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .maerker_tooltip:hover .maerker_tekst {
+    visibility: visible;
+  }
+
+  .maerker_tooltip .maerker_tekst {
+    width: 200px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -100px;
+    /* Use half of the width (120/2 = 60), to center the tooltip */
+  }
+
+  .maerker_tekst {
+    text-align: center;
+    vertical-align: center;
+  }
+
+  .maerker_tooltip p a {
+    text-decoration: none;
+    border-radius: 50px;
+    color: #A8C9EA;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 5px 12px;
+    background-color: #F8FBFF;
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.32);
+    box-shadow: 0px 0px 6px 0px rgb(0, 0, 0, 0.32);
+    line-height: 40px;
+  }
+
+  /* Footer hovers */
+  .logo_maerker div img,
+  .some_ikoner a img,
+  .kildehundenmail,
+  .kildehundenadresse {
     filter: brightness(100%);
     -webkit-filter: brightness(100%);
     -webkit-transition: all 0.1s ease-in-out;
@@ -514,66 +465,18 @@
   }
 
   .some_ikoner img:hover,
-  .logo_maerker img:hover {
+  .logo_maerker img:hover,
+  .kildehundenmail:hover,
+  .kildehundenadresse:hover {
     filter: brightness(80%);
     -webkit-filter: brightness(80%);
     cursor: pointer;
   }
 
-  @media screen and (max-width:932px) {
-    footer {
-      flex-direction: column;
-    }
-
-    .logo_maerker,
-    .some_ikoner {
-      overflow-x: hidden;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .logo_maerker,
-    address {
-      width: 100% !important;
-    }
-
-    address {
-      order: 1;
-    }
-
-    .some_ikoner {
-      min-width: 50%;
-      order: 2;
-    }
-
-    .logo_maerker {
-      order: 3;
-    }
-
-    .logo_maerker a img {
-      width: 60px;
-    }
-
-    .kontaktadresse {
-      text-align: center;
-      margin: 0 auto;
-    }
-
-    address,
-    .some_ikoner {
-      margin-bottom: 10px;
-    }
+  .maerker_tooltip p a:hover {
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
   }
-
-  /*
-  @media only screen and (max-width: 768px) {
-    body {
-      overflow: hidden;
-    }
-  }
-*/
 
   /* Købsprocessen */
   iframe {
@@ -758,4 +661,166 @@
   [data-tooltip=""]::after,
   [data-tooltip=""]::before {
     display: none !important;
+  }
+
+  /* --------------- Media queries --------------- */
+  @media screen and (max-width:533px) {
+    .instating img {
+      width: 10em;
+    }
+
+    .img-featured-container .description-container {
+      font-size: 0.7em;
+    }
+
+    .likes,
+    .comments {
+      font-size: 20px !important;
+    }
+  }
+
+  @media screen and (min-width:933px) {
+    /* Navigation - gør at dropdown menu kommer frem */
+    .menupunkt:hover ul {
+      display: block;
+      position: absolute;
+    }
+  }
+
+  @media screen and (max-width:932px) {
+    /* Navigation - burgermenu */
+    .bmenu {
+      display: flex;
+      position: sticky;
+    }
+
+    .logotekstbillede {
+      margin: 5px;
+      margin-left: 10px;
+    }
+
+    .menupunkt span img {
+      display: inline-block;
+    }
+
+    #menu {
+      display: none;
+      width: 100%;
+      margin: 1px;
+      border-top: 1px solid black;
+      border-left: 1px solid black;
+    }
+
+    .menupunkt {
+      border-bottom: 1px solid black;
+      margin: 0px;
+    }
+
+    .menupunkt a,
+    .menupunkt p {
+      padding: 10px;
+      transition: none;
+    }
+
+    .menupunkt a:hover,
+    .menupunkt p:hover {
+      opacity: 1;
+    }
+
+    .logotekst {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    #menu ul li a {
+      min-width: 100%;
+      max-width: 100%;
+      padding: 20px;
+    }
+
+    /* Footer - så elementer stackes */
+    footer {
+      flex-direction: column;
+    }
+
+    /* Footer mærker tooltips */
+    .logo_maerker {
+      flex-wrap: wrap;
+    }
+
+    .maerker_tooltip p a {
+      font-size: 15px;
+      line-height: 40px;
+    }
+
+    .maerker_tekst {
+      padding: 3px;
+      font-size: 15px;
+      text-align: justify;
+    }
+
+    .maerker_tooltip .maerker_tekst {
+      width: 126px;
+    }
+
+    .logo_maerker .maerker_tooltip img {
+      width: 90px !important;
+    }
+
+    .maerker_tooltip .maerker_tekst {
+      width: 126px;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -63px;
+      /* Use half of the width (120/2 = 60), to center the tooltip */
+    }
+
+    /* Footer adresse, mærker & SoMe ikoner */
+    .logo_maerker,
+    .some_ikoner {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo_maerker,
+    address {
+      width: 100% !important;
+    }
+
+    address {
+      order: 1;
+    }
+
+    .some_ikoner {
+      min-width: 50%;
+      order: 2;
+    }
+
+    .logo_maerker {
+      order: 3;
+    }
+
+    .kontaktadresse {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    address,
+    .some_ikoner {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width:1048px) {
+    /* Navigationsbar - så vi ikke behøver lave burgermenu før 933px */
+    #menu,
+    .menupunkt {
+      margin-right: 5px;
+    }
+
+    .logotekstbillede {
+      margin-left: 10px;
+    }
   }

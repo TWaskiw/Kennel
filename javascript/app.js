@@ -18,16 +18,15 @@ function aabenLuk() {
 
 // Åben/luk navigation dropdown + rotér pil
 function navUL(index) {
-  // Åbner dropdown menu når man klikker på pil
   const aabennav = document.getElementById('ulListe' + index);
+  const roterpil = document.getElementById("pilned" + index);
+  // Åbner dropdown menu når man klikker på pil
   if (aabennav.style.display === "block") {
     aabennav.style.display = "none";
   } else {
     aabennav.style.display = "block";
   }
-
   // Roterer pilen 180 grader når man åbner dropdown menu
-  const roterpil = document.getElementById("pilned" + index);
   if (roterpil.style.transform === "rotate(180deg)") {
     roterpil.style.transform = "none";
   } else {
