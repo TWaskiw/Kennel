@@ -1,9 +1,9 @@
  // Fullpage.js library anchors - tillader at linke internt på siden
  var myFullpage = new fullpage('#fullpage', {
-    anchors: ['firstPage', 'secondPage', 'thirdPage'],
-    navigation: true,
-    navigationPosition: 'right',
-    navigationTooltips: ['First page', 'Second page', 'Third and last page']
+  anchors: ['firstPage', 'secondPage', 'thirdPage'],
+  navigation: true,
+  navigationPosition: 'right',
+  navigationTooltips: ['First page', 'Second page', 'Third and last page']
 });
 
 // Åben/luk burgermenu
@@ -33,4 +33,3 @@ function navUL(index) {
     roterpil.style.transform = "rotate(180deg)";
   }
 }
-

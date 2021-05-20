@@ -65,10 +65,51 @@
         </nav>
     </header>
     <main>
+        <div class="fylde"></div>
         <section>
-    <div id="instafeed" class="instating"></div>
-</section>
-</main>
+            <div class="anmeldelserslide">
+
+                <div class="anmeldelse">
+                    <img src="img/kvinde-ikon.png"><br>
+                    <p class="anmelder">Vibe</p>
+                    <q>Min mand, to børn og jeg købte i februar 2016 en hvalp. Vi var meget glade for den omsorg og
+                        plads der fandtes både indenfor og udenfor.
+                        Vi har haft utrolig god kommunikation, både inden køb og efter.
+                        Vi har fået en veltilpasset, rolig og kærlig hanhund.
+                        Vi har anbefalet Kennel Kildehunden mange gange, til andre der også søgte fransk bulldog.
+                        Varme ord herfra<span>&hearts;&hearts;</span> </q>
+                </div>
+
+                <div class="anmeldelse">
+                    <img src="img/kvinde-ikon.png"><br>
+                    <p class="anmelder">Pia</p>
+                    <q>Vi fik anbefalet kennel Kildehunden igennem en anden kennel, da de ikke havde flere hvalpe til
+                        salg, og det er vi ikke kede af Britta brænder for sine hunde, vi har fået en skøn sund hvalp,
+                        som får meget ros og vi er yderst tilfredse med forløbet, kan kun varmt anbefale at købe fra
+                        denne kennel<span>&hearts;</span></q>
+                </div>
+
+                <div class="anmeldelse">
+                    <img src="img/kvinde-ikon.png"><br>
+                    <p class="anmelder">Kimie</p>
+                    <q>Hele forløbet var meget professionelt og omsorgsfuldt, jeg var ydermere på besøg hos vapsen
+                        jævnligt op til den glædelige dato, hvor han skulle hjem og bo hos os. Der har været en utrolig
+                        god kommunikation og plads til alle de spørgsmål jeg måtte have. Britta er utrolig omsorgsfuld
+                        og der er en stor kærlighed til hendes hunde, man føler sig velkommen og jeg har følt mig
+                        utrolig tryg og vejledt hele vejen igennem. Jeg endte med at vælge en skøn og sund hanhund, som
+                        viste sig at være det helt rigtige for vores familie. De varmeste anbefalinger herfra.</q>
+                </div>
+                <div class="prikker">
+                    <span class="prik" onclick="currentSlide(1)"></span>
+                    <span class="prik" onclick="currentSlide(2)"></span>
+                    <span class="prik" onclick="currentSlide(3)"></span>
+                </div>
+                <a class="forrige" onclick="plusSlides(-1)">❮</a>
+                <a class="naeste" onclick="plusSlides(1)">❯</a>
+            </div>
+            <div id="instafeed" class="instating"></div>
+        </section>
+    </main>
     <footer>
         <address>
             <div class="adressecontainer">
@@ -101,7 +142,8 @@
             <div class="maerker_tooltip">
                 <img src="img/dkk-uddannet-maerke.png">
                 <p class="maerker_tekst">Dansk Kennel Klubs opdrætter uddannelse siden 2015<br><a
-                        href="https://www.dkk.dk/kurser-prover-og-traening/deltag-i-kurser-hos-dkk/opdr%C3%A6tteruddannelser">Besøg DKK</a></p>
+                        href="https://www.dkk.dk/kurser-prover-og-traening/deltag-i-kurser-hos-dkk/opdr%C3%A6tteruddannelser">Besøg
+                        DKK</a></p>
             </div>
             <div class="maerker_tooltip">
                 <img src="img/DKK-maerke.png">
@@ -121,6 +163,7 @@
     </footer>
     <script type="text/javascript" src="javascript/tokengen.js"></script>
     <script type="text/javascript" src="javascript/app.js"></script>
+    <script src="slideshow.js"></script>
 </body>
 
 </html>
