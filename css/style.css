@@ -125,6 +125,10 @@
     display: none;
   }
 
+  .menupunkt span img:hover {
+    transform: rotate(180deg);
+  }
+
   .menupunkt span {
     border-radius: 100%;
   }
