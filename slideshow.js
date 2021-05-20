@@ -25,7 +25,9 @@ function showSlides(n) {
     for (am = 0; am < prikkerne.length; am++) {
         prikkerne[am].className = prikkerne[am].className.replace("aktive", "");
     }
+    // display:none i CSS ændres til display: block
     anmeld[anmeldIndex - 1].style.display = "block";
+    // Giver farve på prikkens respektive slide
     prikkerne[anmeldIndex - 1].className += " aktive";
 }
 
