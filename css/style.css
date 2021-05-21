@@ -857,6 +857,165 @@
     display: none !important;
   }
 
+/*----- FAQ sektion ------*/
+
+/* FAQ HERFRA */
+.main-faq {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-faq h1 {
+  color: #F4B685;
+}
+
+/* Specifik ikon-support */
+.faq-page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.specific-target-support {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.specific-target-support h1 {
+  font-size: 32px;
+  margin: 1em 0;
+}
+
+.faq-navigation-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.faq-navigation-icons img {
+  width: 7.5vw;
+}
+
+.icon-text{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.icon-text p {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* FAQ section */
+.faq-section {
+  margin-top: 50px;
+  margin-bottom: 250px;
+}
+
+.faq-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.faq-header h1 {
+  font-size: 32px;
+}
+
+.faq-header p {
+  color: #F4B685
+}
+
+.faq-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+details {
+  width: 50vw;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+summary {
+  padding: 1em 1.5em;
+  cursor: pointer;
+}
+
+summary::marker {
+  color: #A8C9EA;
+}
+
+.faq-answer {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1.5em;
+  background-color: #E2E3E9;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.answer-by img {
+  margin-right: 0.5em;
+  width: 2em;
+  height: 2em;
+}
+
+.answer-by {
+  display: flex;
+  flex-direction: row;
+}
+
+.answer p {
+  padding: 0.5em 2.5em 2em 2.5em;
+}
+
+.by-date {
+  font-weight: lighter;
+}
+
+.faq-answer hr {
+  height: 1px;
+  width: 90%;
+  background-color: #A8C9EA;
+  border:none;
+}
+
+.vote-feedback p {
+  font-size: smaller;
+}
+
+.answer-feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:0 2.5em 0 2.5em;
+}
+
+.heart-like-feedback {
+  display: flex;
+  align-items: center;
+}
+
+.fa-heart {
+color:#fffaf6;
+cursor: pointer;
+}
+
+/* FAQ slut */
+
   /* --------------- Media queries --------------- */
   @media screen and (max-width:533px) {
     .instating img {
