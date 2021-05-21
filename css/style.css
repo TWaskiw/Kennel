@@ -38,13 +38,6 @@
 
 
   /* --------------- Fonts --------------- */
-  @font-face {
-    font-family: 'Gabriola';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Gabriola'), url('fonts/gabriola Font Download.woff') format('woff');
-  }
-
   /* --------------- Baggrundsfarve på index --------------- */
   .bodyindex {
     background-color: #F5EBE9;
@@ -68,7 +61,11 @@
   }
 
   header,
-  nav {
+  nav,
+  .logotekstbillede,
+  .logotekst,
+  .logobillede,
+  .logobilledecontainer {
     z-index: 999;
   }
 
@@ -211,6 +208,7 @@
     height: 300px;
     border-radius: 20px;
     margin: 0 auto;
+    margin-top: 30px !important;
     background-color: #F8FBFF;
     -webkit-box-shadow: 0px 8px 9px 1px rgba(0, 0, 0, 0.33);
     -moz-box-shadow: 0px 8px 9px 1px rgba(0, 0, 0, 0.33);
@@ -270,10 +268,11 @@
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-  
+
   .forrige {
     margin-left: 2px;
   }
+
   /* Position the "next button" to the right */
   .naeste {
     position: absolute;
@@ -320,14 +319,29 @@
   }
 
   /* --------------- Instagram Basic Display API // Instafeed --------------- */
+
+  .kennelinstagram {
+    font-family: sanvito-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .kennelinstagram h3, .kennelinstagram h4 {
+    color: #F4B685;
+  }
+
+  .kennelinstagram h3 span, .kennelinstagram h4 span {
+    color: #A8C9EA;
+  }
+
+
   .instating {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     padding-top: 30px;
   }
 
@@ -451,59 +465,71 @@
 
 
   /* --------------- GALLERI --------------- */
-  * {box-sizing: border-box}
-.mySlides1, .mySlides2 {display: none}
-img {vertical-align: middle;}
+  * {
+    box-sizing: border-box
+  }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
+  .mySlides1,
+  .mySlides2 {
+    display: none
+  }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
+  img {
+    vertical-align: middle;
+  }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
 
-/* On hover, add a grey background color */
-.prev:hover, .next:hover {
-  background-color: #f1f1f1;
-  color: black;
-}
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a grey background color */
+  .prev:hover,
+  .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+
   /* --------------- FOOTER --------------- */
   footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 30px !important;
     min-width: 100%;
     margin: 0 auto;
-    clear: both;
   }
 
   footer>.logo_maerker,
   .some_ikoner,
   address {
     width: 33%;
+    padding: 0px;
   }
 
   .some_ikoner,
@@ -511,6 +537,7 @@ img {vertical-align: middle;}
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     margin: 0 auto;
   }
 
@@ -540,6 +567,7 @@ img {vertical-align: middle;}
     color: inherit;
     line-height: 30px;
     margin-top: 4px;
+    color: #000000;
   }
 
   .kildehundenmail,
@@ -648,7 +676,11 @@ img {vertical-align: middle;}
 
   .section {
     text-align: center;
-    color: white !important;
+    color: #000000;
+  }
+
+  .section .fp-right ul {
+    display: none !important;
   }
 
   .hundeikoner {
@@ -686,8 +718,7 @@ img {vertical-align: middle;}
     min-height: 100%;
   }
 
-  .forstesec p,
-  h1 {
+  .forstesec p {
     position: relative;
     z-index: 10;
   }
@@ -829,7 +860,7 @@ img {vertical-align: middle;}
   /* --------------- Media queries --------------- */
   @media screen and (max-width:533px) {
     .instating img {
-      width: 10em;
+      width: 8.5em;
     }
 
     .img-featured-container .description-container {
@@ -839,6 +870,12 @@ img {vertical-align: middle;}
     .likes,
     .comments {
       font-size: 20px !important;
+    }
+
+    .img-featured-container {
+      -webkit-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.88);
+      -moz-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.88);
+      box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.88);
     }
   }
 
@@ -880,11 +917,13 @@ img {vertical-align: middle;}
       min-width: 100%;
       border-top: 1px solid black;
       margin-right: 0px;
+      background-color: #F5EBE9;
     }
 
     .menupunkt {
       border-bottom: 1px solid black;
       margin: 0px;
+      padding-left: 9px;
     }
 
     .menupunkt a,
@@ -911,7 +950,7 @@ img {vertical-align: middle;}
 
     /* Anmeldelser - så tekst kan være i container */
     .anmeldelserslide {
-      height: 460px;
+      height: 450px;
       width: 95%;
     }
 

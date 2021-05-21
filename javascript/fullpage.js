@@ -139,7 +139,7 @@
             resetSliders: false,
             fadingEffect: false,
             normalScrollElements: null,
-            scrollOverflow: false,
+            scrollOverflow: true,
             scrollOverflowReset: false,
             scrollOverflowHandler: window.fp_scrolloverflow ? window.fp_scrolloverflow.iscrollHandler : null,
             scrollOverflowOptions: null,

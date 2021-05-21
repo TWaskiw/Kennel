@@ -14,6 +14,9 @@
     <script type="text/javascript" src="javascript/instafeed.js"></script>
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/zlh4kzy.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <script src="javascript/fullpage.js"></script>
+    <script type="text/javascript" src="javascript/scrolloverflow.min.js"></script>
     <link rel="icon" type="image/x-icon" href="img/KKfavicon.png" />
     <!--<link rel="stylesheet" href="css/normalize.css"> -->
 </head>
@@ -64,9 +67,21 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="fylde"></div>
-        <section>
+    <main id="fullpage">
+        <!-- Section 1 (forside)-->
+        <section class="section">
+            <header>
+                <h1>hej alle dem der elsker hunde</h1>
+            </header>
+        </section>
+
+        <section class="section">
+            <header>
+                <h2>hej hej hej hej hej ehej den er godfin</h2>
+            </header>
+        </section>
+        <!-- Section 3 -->
+        <section class="section">
             <div class="anmeldelserslide">
 
                 <div class="anmeldelse">
@@ -92,8 +107,7 @@
                 <div class="anmeldelse">
                     <img src="img/kvinde-ikon.png"><br>
                     <p class="anmelder">Kimie</p>
-                    <q>Hele forløbet var meget professionelt og omsorgsfuldt, jeg var ydermere på besøg hos vapsen
-                        jævnligt op til den glædelige dato, hvor han skulle hjem og bo hos os. Der har været en utrolig
+                    <q>Hele forløbet var meget professionelt og omsorgsfuldt. Der har været en utrolig
                         god kommunikation og plads til alle de spørgsmål jeg måtte have. Britta er utrolig omsorgsfuld
                         og der er en stor kærlighed til hendes hunde, man føler sig velkommen og jeg har følt mig
                         utrolig tryg og vejledt hele vejen igennem. Jeg endte med at vælge en skøn og sund hanhund, som
@@ -107,9 +121,13 @@
                 <a class="forrige" onclick="plusSlides(-1)">❮</a>
                 <a class="naeste" onclick="plusSlides(1)">❯</a>
             </div>
+            <section class="kennelinstagram">
+            <h3>Del din guldklump med os på <span>Instagram</span></h3>
+            <h4>ved at bruge hashtagget <span>#kildehvalpene</span></h4>
             <div id="instafeed" class="instating"></div>
+            </section>
         </section>
-    </main>
+        <section class="section fp-auto-height">
     <footer>
         <address>
             <div class="adressecontainer">
@@ -161,6 +179,8 @@
             </a>
         </div>
     </footer>
+</section>
+</main>
     <script type="text/javascript" src="javascript/tokengen.js"></script>
     <script type="text/javascript" src="javascript/app.js"></script>
     <script src="slideshow.js"></script>
