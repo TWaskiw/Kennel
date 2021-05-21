@@ -435,6 +435,12 @@
     display: block;
   }
 
+  .fa-comment {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    color: white;
+  }
+
   /* Instagram API // Instafeed hovers */
   .likes,
   .comments,
@@ -459,8 +465,7 @@
   }
 
   .comments:hover {
-    color: #d3d3d3;
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
 
