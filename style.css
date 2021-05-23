@@ -1,0 +1,1248 @@
+  /* --------------- Global --------------- */
+  body {
+    scroll-behavior: smooth;
+  }
+
+
+  /* --------------- CSS reset --------------- */
+  html {
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+  }
+
+
+  /* --------------- Fonts --------------- */
+  /* --------------- Baggrundsfarve på index --------------- */
+  .bodyindex {
+    background-color: #F5EBE9;
+    font-family: haboro-soft, sans-serif;
+  }
+
+  /* --------------- Navigationsbar--------------- */
+  #menu {
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    position: sticky;
+    margin-right: 5%;
+    margin-top: 20px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    z-index: 999;
+  }
+
+  header,
+  nav,
+  .logotekstbillede,
+  .logotekst,
+  .logobillede,
+  .logobilledecontainer {
+    z-index: 999;
+  }
+
+  .navlogolink {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .logotekstbillede {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 20px;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
+
+  .logotekst {
+    margin-left: 8px !important;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .logobillede {
+    max-width: 70px;
+    max-height: 70px;
+    flex-basis: 40%;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .menupunkt {
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 20px 10px 10px 20px;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+
+  .menupunkt span img {
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-bottom: -5px;
+    display: none;
+  }
+
+  .menupunkt span {
+    border-radius: 100%;
+  }
+
+  .menupunkt ul {
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.32);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.32);
+    display: none;
+    line-height: normal;
+  }
+
+  .menupunkt li a {
+    background-color: #faf5f4;
+    padding: 15px;
+    width: inherit;
+    vertical-align: middle;
+    text-align: left;
+  }
+
+  #menu li a,
+  #menu li p {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  .bmenu {
+    font-size: 35px;
+    display: none;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    float: right;
+    position: sticky;
+    margin-right: 5%;
+    margin-top: 25px;
+    z-index: 999;
+  }
+
+  /* Menupunkt hovers */
+  .logotekstbillede,
+  .menupunkt li a,
+  .menupunkt a,
+  .menupunkt p,
+  .menuer,
+  #pilned1,
+  #pilned2,
+  #pilned3 {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menupunkt li a:hover {
+    background-color: #e6e4e4;
+    z-index: 999;
+  }
+
+  .logotekstbillede:hover,
+  .menuer:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  /* --------------- INDEX --------------- */
+  /* --------------- Anmeldelser --------------- */
+  .fylde {
+    height: 100vh;
+  }
+
+  /* Slideshow container */
+  .anmeldelserslide {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    max-height: 500px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 30px !important;
+    background-color: #F8FBFF;
+    -webkit-box-shadow: 0px 8px 9px 1px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 0px 8px 9px 1px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.33);
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+
+  /* Slides */
+  .anmeldelse {
+    display: none;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1em;
+    padding: 50px;
+  }
+
+  .containeranmeldelser {
+    position: relative;
+  }
+
+  .anmeldelse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+
+  .anmeldelse img {
+    max-width: 50px;
+    margin: 0 auto;
+  }
+
+  .anmeldelse q span {
+    color: red;
+  }
+
+  /* Next & previous buttons */
+  .forrige,
+  .naeste {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 6px;
+    color: #A8C9EA;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .forrige {
+    margin-left: 2px;
+  }
+
+  /* Position the "next button" to the right */
+  .naeste {
+    position: absolute;
+    margin-right: 2px;
+    right: 0;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+
+  /* The dot/bullet/indicator container */
+  .prikker {
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* The dots/bullets/indicators */
+  .prik {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 4px;
+    background-color: #eaeaea;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+    display: inline-block;
+  }
+
+  /* Add a background color to the active dot/circle */
+  .aktive,
+  .prik:hover {
+    background-color: #A8C9EA;
+  }
+
+  /* Add an italic font style to all quotes */
+  q {
+    font-style: italic;
+  }
+
+  /* Add a blue color to the author */
+  .anmelder {
+    color: #000000;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  /* --------------- Instagram Basic Display API // Instafeed --------------- */
+
+  .kennelinstagram {
+    font-family: sanvito-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .kennelinstagram h3,
+  .kennelinstagram h4 {
+    color: #F4B685;
+  }
+
+  .kennelinstagram h3 span,
+  .kennelinstagram h4 span {
+    color: #A8C9EA;
+  }
+
+
+  .instating {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 30px;
+  }
+
+  .instating img {
+    width: 16em;
+    flex: 1 1 200px;
+    padding: 0;
+    margin-bottom: -5px;
+  }
+
+  .instating [class*='col-']:not(:first-child),
+  .instating [class*='col-']:not(:last-child) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .img-featured-container {
+    overflow: hidden;
+    position: relative;
+    margin: 8px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 3px 31px -1px rgba(0, 0, 0, 0.88);
+    -moz-box-shadow: 0px 3px 31px -1px rgba(0, 0, 0, 0.88);
+    box-shadow: 0px 3px 31px -1px rgba(0, 0, 0, 0.88);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .img-featured-container .img-backdrop {
+    background: linear-gradient(135deg, rgba(168, 201, 234, 0.90), rgba(131, 97, 73, 0.90));
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  .img-featured-container .description-container {
+    color: #fff;
+    font-size: 1em;
+    padding: 0 10px;
+    text-align: center;
+    font-family: haboro-soft-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+  }
+
+  .img-featured-container .description-container .fa-instagram {
+    font-size: 40px;
+  }
+
+  .img-featured-container .description-container p {
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+
+  .img-featured-container:hover .description-container {
+    opacity: 1;
+  }
+
+  .img-featured-container .description-container .caption {
+    display: none;
+    margin-bottom: 10px;
+  }
+
+  .img-featured-container .description-container .likes,
+  .img-featured-container .description-container .comments {
+    margin: 0 5px;
+    font-size: 30px;
+  }
+
+  .img-featured-container .description-container .caption {
+    display: block;
+  }
+
+  .fa-comment {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    color: white;
+  }
+
+  /* Instagram API // Instafeed hovers */
+  .likes,
+  .comments,
+  .img-featured-container .img-backdrop {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .img-featured-container:hover {
+    transform: translateY(-5px);
+  }
+
+  .img-featured-container:hover>.img-backdrop {
+    opacity: 1;
+  }
+
+  .likes:hover {
+    color: red;
+  }
+
+  .comments:hover {
+    opacity: 0.6;
+  }
+
+
+  /* --------------- GALLERI --------------- */
+  * {
+    box-sizing: border-box
+  }
+
+  .mySlides1,
+  .mySlides2 {
+    display: none
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a grey background color */
+  .prev:hover,
+  .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+
+  /* --------------- FOOTER --------------- */
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px !important;
+    min-width: 100%;
+    margin: 0 auto;
+  }
+
+  footer>.logo_maerker,
+  .some_ikoner,
+  address {
+    width: 33%;
+    padding: 0px;
+  }
+
+  .some_ikoner,
+  .logo_maerker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  address {
+    text-align: center;
+  }
+
+  .adressecontainer {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .kontaktadresse {
+    font-weight: 600 !important;
+    font-size: 25px;
+    color: #A8C9EA;
+  }
+
+  .kontaktadresse,
+  address,
+  .logo_maerker {
+    font-style: normal;
+  }
+
+  address a {
+    text-decoration: underline;
+    color: inherit;
+    line-height: 30px;
+    margin-top: 4px;
+    color: #000000;
+  }
+
+  .kildehundenmail,
+  .kildehundenadresse {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 8px;
+  }
+
+  .logo_maerker img {
+    margin: 4px;
+  }
+
+  .logo_maerker div img,
+  .some_ikoner a img {
+    width: 75px;
+  }
+
+  /* Footer tooltips på mærker */
+  .maerker_tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .maerker_tooltip .maerker_tekst {
+    visibility: hidden;
+    width: 200px;
+    background-color: #A8C9EA;
+    color: #fff;
+    padding: 8px 5px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .maerker_tooltip:hover .maerker_tekst {
+    visibility: visible;
+  }
+
+  .maerker_tooltip .maerker_tekst {
+    width: 200px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -100px;
+    /* Use half of the width (120/2 = 60), to center the tooltip */
+  }
+
+  .maerker_tekst {
+    text-align: center;
+    vertical-align: center;
+  }
+
+  .maerker_tooltip p a {
+    text-decoration: none;
+    border-radius: 50px;
+    color: #A8C9EA;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 5px 12px;
+    background-color: #F8FBFF;
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.32);
+    box-shadow: 0px 0px 6px 0px rgb(0, 0, 0, 0.32);
+    line-height: 40px;
+  }
+
+  /* Footer hovers */
+  .logo_maerker div img,
+  .some_ikoner a img,
+  .kildehundenmail,
+  .kildehundenadresse {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .some_ikoner img:hover,
+  .logo_maerker img:hover,
+  .kildehundenmail:hover,
+  .kildehundenadresse:hover {
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+    cursor: pointer;
+  }
+
+  .maerker_tooltip p a:hover {
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+  }
+
+  /* Købsprocessen */
+  iframe {
+    pointer-events: none !important;
+  }
+
+  .section {
+    text-align: center;
+    color: #000000;
+  }
+
+  .section .fp-right ul {
+    display: none !important;
+  }
+
+  .hundeikoner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .hundeikon {
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    background-color: white;
+    color: gray;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .hundepleje img {
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+  }
+
+  .forstesec video {
+    position: absolute;
+    background-size: cover;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 65%;
+    filter: brightness(60%);
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .forstesec p {
+    position: relative;
+    z-index: 10;
+  }
+
+  /*
+  .forstesec {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/trehunde.jpg');
+  }
+*/
+  .andensec {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/trehunde.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  [data-tooltip] {
+    position: relative;
+    cursor: pointer;
+  }
+
+  [data-tooltip]:before,
+  [data-tooltip]:after {
+    line-height: 1;
+    font-size: .9em;
+    pointer-events: none;
+    position: absolute;
+    box-sizing: border-box;
+    display: none;
+    opacity: 0;
+  }
+
+  [data-tooltip]:before {
+    content: "";
+    border: 5px solid transparent;
+    z-index: 100;
+  }
+
+  [data-tooltip]:after {
+    content: attr(data-tooltip);
+    text-align: center;
+    min-width: 3em;
+    max-width: 21em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 15px 16px;
+    border-radius: 100px;
+    background: #FFFFFF;
+    color: #080808;
+    z-index: 99;
+  }
+
+  [data-tooltip]:hover:before,
+  [data-tooltip]:hover:after {
+    display: block;
+    opacity: 1;
+  }
+
+  [data-tooltip]:not([data-flow])::before,
+  [data-tooltip][data-flow="top"]::before {
+    bottom: 100%;
+    border-bottom-width: 0;
+    border-top-color: #FFFFFF;
+  }
+
+  [data-tooltip]:not([data-flow])::after,
+  [data-tooltip][data-flow="top"]::after {
+    bottom: calc(100% + 5px);
+  }
+
+  [data-tooltip]:not([data-flow])::before,
+  [tooltip]:not([data-flow])::after,
+  [data-tooltip][data-flow="top"]::before,
+  [data-tooltip][data-flow="top"]::after {
+    left: 50%;
+    -webkit-transform: translate(-50%, -4px);
+    transform: translate(-50%, -4px);
+  }
+
+  [data-tooltip][data-flow="bottom"]::before {
+    top: 100%;
+    border-top-width: 0;
+    border-bottom-color: #FFFFFF;
+  }
+
+  [data-tooltip][data-flow="bottom"]::after {
+    top: calc(100% + 5px);
+  }
+
+  [data-tooltip][data-flow="bottom"]::before,
+  [data-tooltip][data-flow="bottom"]::after {
+    left: 50%;
+    -webkit-transform: translate(-50%, 8px);
+    transform: translate(-50%, 8px);
+  }
+
+  [data-tooltip][data-flow="left"]::before {
+    top: 50%;
+    border-right-width: 0;
+    border-left-color: #FFFFFF;
+    left: calc(0em - 5px);
+    -webkit-transform: translate(-8px, -50%);
+    transform: translate(-8px, -50%);
+  }
+
+  [data-tooltip][data-flow="left"]::after {
+    top: 50%;
+    right: calc(100% + 5px);
+    -webkit-transform: translate(-8px, -50%);
+    transform: translate(-8px, -50%);
+  }
+
+  [data-tooltip][data-flow="right"]::before {
+    top: 50%;
+    border-left-width: 0;
+    border-right-color: #FFFFFF;
+    right: calc(0em - 5px);
+    -webkit-transform: translate(8px, -50%);
+    transform: translate(8px, -50%);
+  }
+
+  [data-tooltip][data-flow="right"]::after {
+    top: 50%;
+    left: calc(100% + 5px);
+    -webkit-transform: translate(8px, -50%);
+    transform: translate(8px, -50%);
+  }
+
+  [data-tooltip=""]::after,
+  [data-tooltip=""]::before {
+    display: none !important;
+  }
+
+  /*----- FAQ sektion ------*/
+
+  /* FAQ HERFRA */
+  .main-faq {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-faq h1 {
+    color: #F4B685;
+  }
+
+  /* Specifik ikon-support */
+  .faq-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+
+  .specific-target-support {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 3em;
+  }
+
+  .specific-target-support h1 {
+    font-size: 32px;
+    margin: 1em 0;
+  }
+
+  .faq-navigation-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .faq-navigation-icons img {
+    width: 5vw;
+  }
+
+  .icon-text {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .icon-text p {
+    text-align: center;
+  }
+
+  .icon-text:hover {
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+    cursor: pointer;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  h1.text-center {
+    font-family: sanvito-pro, sans-serif;
+  }
+
+  /* FAQ section */
+  .faq-section {
+    margin-top: 50px;
+    margin-bottom: 250px;
+  }
+
+  .faq-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .faq-header h1 {
+    font-size: 32px;
+    font-family: sanvito-pro, sans-serif;
+  }
+
+  .faq-header p {
+    color: #F4B685
+  }
+
+  .faq-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  details {
+    width: 50vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  summary {
+    padding: 1em 1.5em;
+    cursor: pointer;
+  }
+
+  summary::marker {
+    color: #A8C9EA;
+  }
+
+  .faq-answer {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1.5em;
+    background-color: #E2E3E9;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .answer-by img {
+    margin-right: 0.5em;
+    width: 2em;
+    height: 2em;
+  }
+
+  .answer-by {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .answer p {
+    padding: 0.5em 2.5em 2em 2.5em;
+  }
+
+  .by-date {
+    font-weight: lighter;
+  }
+
+  .faq-answer hr {
+    height: 1px;
+    width: 90%;
+    background-color: #A8C9EA;
+    border: none;
+  }
+
+  .vote-feedback p {
+    font-size: smaller;
+  }
+
+  .answer-feedback {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2.5em 0 2.5em;
+  }
+
+  .heart-like-feedback {
+    display: flex;
+    align-items: center;
+  }
+
+  .fa-heart {
+    color: #fffaf6;
+    cursor: pointer;
+  }
+
+  /* FAQ slut */
+
+  /* --------------- Media queries --------------- */
+  @media screen and (max-width:533px) {
+    .instating img {
+      width: 8.5em;
+    }
+
+    .img-featured-container .description-container {
+      font-size: 0.7em;
+    }
+
+    .likes,
+    .comments {
+      font-size: 20px !important;
+    }
+
+    .img-featured-container {
+      -webkit-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.88);
+      -moz-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.88);
+      box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.88);
+    }
+  }
+
+  @media screen and (min-width:933px) {
+
+    /* Navigation - gør at dropdown menu kommer frem */
+    .menupunkt:hover ul {
+      display: block;
+      position: absolute;
+    }
+
+    /* Anmeldelser knapper - så det ikke ser underligt ud på mobil */
+    .forrige:hover,
+    .naeste:hover {
+      background-color: #A8C9EA;
+      color: #F8FBFF;
+    }
+  }
+
+  @media screen and (max-width:932px) {
+
+    /* Navigation - burgermenu */
+    .bmenu {
+      display: flex;
+      position: sticky;
+    }
+
+    .logotekstbillede {
+      margin: 5px;
+      margin-left: 10px;
+    }
+
+    .menupunkt span img {
+      display: inline-block;
+    }
+
+    #menu {
+      display: none;
+      min-width: 100%;
+      border-top: 1px solid black;
+      margin-right: 0px;
+      background-color: #F5EBE9;
+    }
+
+    .menupunkt {
+      border-bottom: 1px solid black;
+      margin: 0px;
+      padding-left: 9px;
+    }
+
+    .menupunkt a,
+    .menupunkt p {
+      padding: 10px;
+      transition: none;
+    }
+
+    .menupunkt a:hover,
+    .menupunkt p:hover {
+      opacity: 1;
+    }
+
+    .logotekst {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    #menu ul li a {
+      min-width: 100%;
+      max-width: 100%;
+      padding: 20px;
+    }
+
+    /* Anmeldelser - så tekst kan være i container */
+    .anmeldelserslide {
+      height: 450px;
+      width: 95%;
+    }
+
+    /* Footer - så elementer stackes */
+    footer {
+      flex-direction: column;
+    }
+
+    /* Footer mærker tooltips */
+    .logo_maerker {
+      flex-wrap: wrap;
+    }
+
+    .maerker_tooltip p a {
+      font-size: 15px;
+      line-height: 40px;
+    }
+
+    .maerker_tekst {
+      padding: 3px;
+      font-size: 15px;
+      text-align: justify;
+    }
+
+    .maerker_tooltip .maerker_tekst {
+      width: 126px;
+    }
+
+    .logo_maerker .maerker_tooltip img {
+      width: 90px !important;
+    }
+
+    .maerker_tooltip .maerker_tekst {
+      width: 126px;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -63px;
+      /* Use half of the width (120/2 = 60), to center the tooltip */
+    }
+
+    /* Footer adresse, mærker & SoMe ikoner */
+    .logo_maerker,
+    .some_ikoner {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo_maerker,
+    address {
+      width: 100% !important;
+    }
+
+    address {
+      order: 1;
+    }
+
+    .some_ikoner {
+      min-width: 50%;
+      order: 2;
+    }
+
+    .logo_maerker {
+      order: 3;
+    }
+
+    .kontaktadresse {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    address,
+    .some_ikoner {
+      margin-bottom: 10px;
+    }
+
+    .faq-page-content {
+      width: 95%;
+    }
+
+    details {
+      width: 80vw;
+    }
+
+    .answer p {
+      padding: 0.5em 0em 2em 0.25em
+    }
+
+    .answer-feedback {
+      padding: 0 0.5em 0 0.5em;
+    }
+
+    .faq-answer hr {
+      width: 95%;
+    }
+  }
+
+  @media screen and (max-width:1048px) {
+
+    /* Navigationsbar - så vi ikke behøver lave burgermenu før 933px */
+    #menu,
+    .menupunkt {
+      margin-right: 5px;
+    }
+
+    .logotekstbillede {
+      margin-left: 10px;
+    }
+  }
