@@ -33,3 +33,7 @@ function navUL(index) {
     roterpil.style.transform = "rotate(180deg)";
   }
 }
+
+function myFunction() {
+  document.getElementById("hjerte").style.color = "#F4B685";
+}
