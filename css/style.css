@@ -1042,6 +1042,89 @@
 
   /* FAQ slut */
 
+  /* Hvem er vi */
+  .main-hvemervi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .om-os-intro {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vores-vaerdier {
+    width: 75%;
+    justify-content: center;
+  }
+
+  .vores-vaerdier h1 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .om-os-tekst {
+    width: 50%;
+    margin: 5em;
+  }
+
+  .vaerdi p {
+    text-align: center;
+  }
+
+  .om-os-tekst h1,
+  .afslutning-tekst h1 {
+    margin-bottom: 0.25em;
+  }
+
+  .alle-vaerdier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .vl {
+    border-right: solid 1px #A8C9EA;
+    height: 100px;
+  }
+
+  .om-os-afslutning {
+    width: 75%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .afslutning-tekst {
+    width: 50%;
+    margin: 5em;
+  }
+
+  .vaerdi {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .vaerdi:hover {
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+    cursor: pointer;
+  }
+
+
   /* --------------- Media queries --------------- */
   @media screen and (max-width:533px) {
     .instating img {
@@ -1231,6 +1314,39 @@
 
     .faq-answer hr {
       width: 95%;
+    }
+
+    /* Om os siden */
+    .om-os-intro {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .om-os-tekst {
+      margin: 0;
+      width: 75%;
+    }
+
+    .om-os-intro img {
+      margin: 1.5em 0;
+    }
+
+    .alle-vaerdier {
+      flex-direction: column;
+    }
+
+    .om-os-afslutning {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .afslutning-tekst {
+      margin: 0;
+      width: 75%;
+    }
+
+    .vl {
+      border-color: transparent;
     }
   }
 
