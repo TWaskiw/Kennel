@@ -65,3 +65,13 @@ function feedback(index) {
   document.getElementById('tak-feedback' + index).style.display = 'block';
 }
 
+function resetVaerdier() {
+  document.getElementById('ansvarlighed').style.display = 'none';
+  document.getElementById('abenhed').style.display = 'none';
+  document.getElementById('omsorg').style.display = 'none';
+}
+
+function vaerdier(value) {
+  resetVaerdier()
+  document.getElementById(value).style.display = 'block';
+}
