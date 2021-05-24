@@ -975,6 +975,10 @@
     margin-bottom: 10px;
   }
 
+  .nytsporgsmål {
+    border: 1px solid #a8c9ea;
+  }
+
   summary {
     padding: 1em 1.5em;
     cursor: pointer;
@@ -1037,6 +1041,39 @@
 
   .fa-heart {
     color: #fffaf6;
+    cursor: pointer;
+  }
+
+  .sporgsmalform {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px;
+  }
+
+  #name, #email, #message {
+    border: 1px solid;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #A8C9EA;
+  margin: 15px 10px 25px 10px;
+  font-size: 14px;
+  font-family: haboro-soft, sans-serif;
+  } 
+
+  #submit {
+    background-color: #F5EBE9;
+    color: rgb(118, 118, 118);
+    border: 1px solid #a8c9ea;
+    border-radius: 5px;
+    height: 30px;
+    margin: 0 40%;
+  }
+
+  #submit:hover {
+    background-color: #a8c9ea;
+    color: white;
     cursor: pointer;
   }
 
@@ -1347,6 +1384,15 @@
 
     .vl {
       border-color: transparent;
+    }
+
+    .icon-text p {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .faq-navigation-icons img {
+      width: 10vw;
     }
   }
 
