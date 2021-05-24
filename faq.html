@@ -117,16 +117,18 @@
                             </div>
                             <hr>
                             <div class="answer-feedback">
-                                <div class="vote-feedback">
+                                <div class="vote-feedback" id="vote-feedback1">
                                     <p>Var dette nyttigt?</p>
-                                    <div class="system">
-                                        <input class="pil-roter" type="image" src="./img/pil_ned.svg" />
+                                    <div class="system" id="system" onclick="feedback(1)">
+                                        <input id="feedback-after" class="pil-roter" type="image"
+                                            src="./img/pil_ned.svg" />
                                         <vl class="vl1"></vl>
-                                        <input type="image" src="./img/pil_ned.svg" />
+                                        <input id="feedback-after" type="image" src="./img/pil_ned.svg" />
                                     </div>
                                 </div>
+                                <p class="tak-feedback" id="tak-feedback1">Tak!</p>
                                 <div class="heart-like-feedback">
-                                    <i id="hjerte" class="fas fa-heart" onclick="myFunction()"></i>
+                                    <i id="hjerte1" class="fas fa-heart" onclick="hjerte(1)"></i>
                                 </div>
                             </div>
                         </div>
@@ -149,17 +151,17 @@
                             </div>
                             <hr>
                             <div class="answer-feedback">
-                                <div class="vote-feedback">
+                                <div class="vote-feedback" id="vote-feedback2">
                                     <p>Var dette nyttigt?</p>
-                                    <div class="system">
+                                    <div class="system" onclick="feedback(2)">
                                         <input class="pil-roter" type="image" src="./img/pil_ned.svg" />
                                         <vl class="vl1"></vl>
                                         <input type="image" src="./img/pil_ned.svg" />
                                     </div>
                                 </div>
-                                <p class="tak-feedback">Tak!</p>
+                                <p class="tak-feedback" id="tak-feedback2">Tak!</p>
                                 <div class="heart-like-feedback">
-                                    <i id="hjerte" class="fas fa-heart" onclick="myFunction()"></i>
+                                    <i id="hjerte2" class="fas fa-heart" onclick="hjerte(2)"></i>
                                 </div>
                             </div>
                         </div>
@@ -171,8 +173,8 @@
                             <input id="name" type="text" placeholder="Navn" required>
                             <input id="email" type="text" placeholder="E-mail" required>
                             <textarea id="message" type="text" placeholder="Besked"></textarea>
-                    <input id="submit" onclick="kontaktGennemfort()" type="submit" value="Send">
-                  </form>
+                            <input id="submit" onclick="kontaktGennemfort()" type="submit" value="Send">
+                        </form>
                     </details>
                 </div>
 
