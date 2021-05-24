@@ -1080,6 +1080,32 @@
       padding: 0 2.5em 0 2.5em;
   }
 
+  .system input {
+      margin: 0.1em;
+      width: 15%;
+  }
+
+  .system {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .vl1 {
+    border-left: solid 0.1em grey;
+    height: 17px;
+    color: #A8C9EA;
+    margin: 0 10%;
+}
+
+.tak-feedback {
+    font-size: normal;
+    display: none;
+}
+
+.pil-roter {
+    transform: rotate(180deg);
+}
+
   .heart-like-feedback {
       display: flex;
       align-items: center;
