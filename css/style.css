@@ -514,7 +514,7 @@
       transform: translateY(-5px);
   }
 
-  .img-featured-container:hover > .img-backdrop {
+  .img-featured-container:hover>.img-backdrop {
       opacity: 1;
   }
 
@@ -588,7 +588,7 @@
       margin: 0 auto;
   }
 
-  footer > .logo_maerker,
+  footer>.logo_maerker,
   .some_ikoner,
   address {
       width: 33%;
@@ -1091,20 +1091,20 @@
   }
 
   .vl1 {
-    border-left: solid 0.1em grey;
-    height: 17px;
-    color: #A8C9EA;
-    margin: 0 10%;
-}
+      border-left: solid 0.1em grey;
+      height: 17px;
+      color: #A8C9EA;
+      margin: 0 10%;
+  }
 
-.tak-feedback {
-    font-size: normal;
-    display: none;
-}
+  .tak-feedback {
+      font-size: normal;
+      display: none;
+  }
 
-.pil-roter {
-    transform: rotate(180deg);
-}
+  .pil-roter {
+      transform: rotate(180deg);
+  }
 
   .heart-like-feedback {
       display: flex;
@@ -1233,6 +1233,19 @@
       filter: brightness(80%);
       -webkit-filter: brightness(80%);
       cursor: pointer;
+  }
+
+
+  #ansvarlighed {
+      display: none;
+  }
+
+  #abenhed {
+      display: none;
+  }
+
+  #omsorg {
+      display: none;
   }
 
   /* --------------------------------------------------- Hunde profiler ------------------------------------------------*/
