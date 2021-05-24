@@ -37,3 +37,7 @@ function navUL(index) {
 function myFunction() {
   document.getElementById("hjerte").style.color = "#F4B685";
 }
+
+function kontaktGennemfort() {
+  alert("Tak for dit spørgsmål, vi har modtaget det!");
+}
