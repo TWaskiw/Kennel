@@ -34,10 +34,34 @@ function navUL(index) {
   }
 }
 
-function myFunction() {
-  document.getElementById("hjerte").style.color = "#F4B685";
+var toggle1 = true
+var toggle2 = true
+function hjerte(index) {
+  if (index === 1){
+    document.getElementById("hjerte" + index).style.color = toggle1 ? 'white': "#F4B685";
+    toggle1 = !toggle1
+  }
+
+  if (index === 2){
+    document.getElementById("hjerte" + index).style.color = toggle2 ? 'white': "#F4B685";
+    toggle2 = !toggle2
+  }
 }
 
+
 function kontaktGennemfort() {
+  const name = document.getElementById('name')
+  const email = document.getElementById('email')
+if (name.value !== "" && email.value !== "") {
   alert("Tak for dit spørgsmål, vi har modtaget det!");
 }
+  console.log(name.value)
+
+
+}
+
+function feedback(index) {
+  document.getElementById('vote-feedback' + index).style.display = 'none';
+  document.getElementById('tak-feedback' + index).style.display = 'block';
+}
+
