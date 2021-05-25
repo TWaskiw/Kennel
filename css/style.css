@@ -950,6 +950,13 @@
       justify-content: space-between;
   }
 
+  .klklfk {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+  }
+
   .faq-navigation-icons img {
       width: 5vw;
   }
@@ -1551,6 +1558,10 @@
 
       .faq-navigation-icons img {
           width: 10vw;
+      }
+
+      .faq-navigation-icons {
+          flex-direction: column;
       }
   }
 
