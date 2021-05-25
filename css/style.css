@@ -1268,6 +1268,10 @@
 
   }
 
+  .race-profil2 {
+      display: none;
+  }
+
   .profil-overskrift {
       font-family: sanvito-pro, sans-serif;
       font-size: 100pt;
@@ -1296,13 +1300,11 @@
       position: absolute;
       margin-top: -3%;
       margin-left: -20%;
-      ;
 
   }
 
   .profil-oversigt {
       width: 500px;
-      height: auto;
       margin-left: 150px;
       margin-top: -20px;
   }
@@ -1316,7 +1318,6 @@
   .flille {
       width: 74%;
   }
-
 
 
   .flex-profil {
@@ -1427,7 +1428,7 @@
 
 
   /* ----------------------------------------------------------------------------------- Media queries --------------- */
-  @media screen and (max-width:533px) {
+  @media screen and (max-width:800px) {
 
       /*------------------------- Velkomst ----------------------*/
       .velkommen {
@@ -1470,6 +1471,171 @@
       }
 
       /*----------------------------*/
+
+      /*-------------------------------------- Hunde profiler -----------------------------*/
+
+
+
+      .race-profil {
+          display: none;
+
+      }
+
+      .race-profil2 {
+          display: block;
+          font-family: sanvito-pro, sans-serif;
+          font-size: 22pt;
+          margin: 2% 0 20% 0;
+      }
+
+      .slide-2 .race-profil2 {
+          position: absolute;
+          margin-top: 7px;
+          width: 34%;
+      }
+
+      .profil-overskrift {
+          font-size: 48pt;
+          text-align: center;
+          margin-left: 0px;
+          margin-top: -15%;
+      }
+
+
+      .profil-billeder-hunde1 {
+          height: 20%;
+          position: relative;
+          margin: 5% 0 5% 0;
+      }
+
+      .profil-billeder-hunde2 {
+          height: 200px;
+          position: relative;
+          margin-top: -0%;
+          margin-left: -0%;
+      }
+
+      .profil-oversigt {
+          width: 100%;
+          margin-left: 0px;
+          margin-top: -0px;
+          padding: 0 10%;
+      }
+
+
+      .flille {
+          max-width: 68%;
+      }
+
+      .stamdata {
+          font-size: 8pt;
+      }
+
+      .stamdata-data {
+          font-size: 12pt;
+      }
+
+      .flex-profil i {
+          font-size: 20pt;
+      }
+
+      .profil-linje {
+          height: 2px;
+          width: 100%;
+      }
+
+      .profil-tekst {
+          width: 100%;
+          margin-left: 0px;
+          padding: 0 10%;
+      }
+
+      .profil-tekst p {
+          font-size: 11pt;
+          width: 100%;
+      }
+
+      .flex-container {
+          max-width: 300px;
+      }
+
+      .ekstra-info {
+          width: 100%;
+          margin: 0px 0 0 0px;
+          padding: 0 10%;
+          display: none;
+      }
+
+      .ekstra-info .flille {
+          width: 96%;
+      }
+
+      .ekstra-info i {
+          font-size: 15pt;
+          color: #a8c9ea;
+      }
+
+      .ekstra-info .stamdata {
+          font-size: 9pt;
+      }
+
+      .ekstra-info .stamdata-data {
+          font-size: 10pt;
+      }
+
+      .ekstra-info .flex-container {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;
+          padding: 20px 0 0 0;
+      }
+
+      .ekstra-info .flex-profil {
+          display: flex;
+          justify-content: flex-start;
+
+      }
+
+      .udstilling {
+          width: 100%;
+          font-size: 10pt;
+      }
+
+
+      .bitch {
+          margin-left: 0%;
+      }
+
+      .bitch .profil-overskrift {
+          margin-top: 15%;
+
+      }
+
+      .bitch .profil-tekst p {
+          width: 100%;
+      }
+
+      .bitch i {
+          color: #f4b684;
+      }
+
+      .bitch .profil-linje {
+          border: solid 1px #f4b684;
+          background-color: #f4b684;
+      }
+
+      .bitch .ekstra-info .flille {
+          width: 101%;
+      }
+
+      .bitch .flille {
+          width: 82%;
+      }
+
+
+
+      /*-----------------------------------------*/
 
       .instating img {
           width: 8.5em;
