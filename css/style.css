@@ -9,6 +9,7 @@
       box-sizing: border-box;
       font-size: 16px;
       scroll-behavior: smooth;
+      font-family: haboro-soft, sans-serif;
   }
 
   *,
@@ -514,7 +515,7 @@
       transform: translateY(-5px);
   }
 
-  .img-featured-container:hover>.img-backdrop {
+  .img-featured-container:hover > .img-backdrop {
       opacity: 1;
   }
 
@@ -588,7 +589,7 @@
       margin: 0 auto;
   }
 
-  footer>.logo_maerker,
+  footer > .logo_maerker,
   .some_ikoner,
   address {
       width: 33%;
@@ -1256,10 +1257,14 @@
   }
 
   /* --------------------------------------------------- Hunde profiler ------------------------------------------------*/
+  .kobsprocesbody {
+      background-color: #f5ebe9;
+  }
+
   .race-profil {
       font-family: sanvito-pro, sans-serif;
       font-size: 28pt;
-      padding-top: 150px;
+      padding-top: 7%;
 
   }
 
@@ -1268,19 +1273,156 @@
       font-size: 100pt;
       text-align: left;
       margin-left: 150px;
-      margin-top: -400px;
+      margin-top: -12%;
   }
 
   .blue {
       color: #a8c9ea;
   }
 
+  .peach {
+      color: #f4b684;
+  }
+
   .profil-billeder-hunde1 {
       height: 50%;
       position: absolute;
-      margin-top: -3%;
+      margin-top: -1%;
+      margin-left: 3%;
   }
 
+  .profil-billeder-hunde2 {
+      height: 60%;
+      position: absolute;
+      margin-top: -3%;
+      margin-left: -20%;
+      ;
+
+  }
+
+  .profil-oversigt {
+      width: 500px;
+      height: auto;
+      margin-left: 150px;
+      margin-top: -20px;
+  }
+
+  .flex-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0 0 0;
+  }
+
+  .flille {
+      width: 74%;
+  }
+
+
+
+  .flex-profil {
+      display: flex;
+      justify-content: flex-start;
+
+  }
+
+  .stamdata {
+      font-family: haboro, sans-serif;
+      font-weight: 700;
+      text-align: left;
+      font-size: 10pt;
+  }
+
+  .stamdata-data {
+      font-size: 16pt;
+      font-weight: 100;
+  }
+
+  .flex-profil i {
+      font-size: 25pt;
+      color: #a8c9ea;
+      padding: 0 5px 0 0;
+  }
+
+  .profil-linje {
+      border: solid 1px #a8c9ea;
+      height: 3px;
+      width: 700px;
+      background-color: #a8c9ea;
+      margin: 10px 0;
+  }
+
+  .profil-tekst {
+      width: 36%;
+      margin-left: 150px;
+  }
+
+  .profil-tekst p {
+      text-align: left;
+      font-family: haboro, sans-serif;
+      width: 700px;
+  }
+
+  .ekstra-info {
+      width: 500px;
+      margin: 10px 0 0 150px;
+  }
+
+  .ekstra-info .flille {
+      width: 96%;
+  }
+
+  .ekstra-info i {
+      font-size: 20pt;
+      color: #a8c9ea;
+  }
+
+  .ekstra-info .stamdata {
+      font-size: 10pt;
+  }
+
+  .ekstra-info .stamdata-data {
+      font-size: 11pt;
+  }
+
+  .udstilling {
+      margin-top: 2%;
+      text-align: left;
+      width: 700px;
+      display: flex;
+  }
+
+  .udstilling i {
+      padding-right: 5px;
+  }
+
+  .bitch {
+      margin-left: 34%;
+  }
+
+  .bitch .profil-overskrift {
+      margin-top: -24%;
+  }
+
+  .bitch .profil-tekst p {
+      width: 700px;
+  }
+
+  .bitch i {
+      color: #f4b684;
+  }
+
+  .bitch .profil-linje {
+      border: solid 1px #f4b684;
+      background-color: #f4b684;
+  }
+
+  .bitch .ekstra-info .flille {
+      width: 101%;
+  }
+
+  .bitch .flille {
+      width: 86%;
+  }
 
 
 
