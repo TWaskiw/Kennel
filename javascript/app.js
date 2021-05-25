@@ -1,10 +1,8 @@
- // Fullpage.js library anchors - tillader at linke internt på siden
- var myFullpage = new fullpage('#fullpage', {
-  anchors: ['firstPage', 'secondPage', 'thirdPage'],
-  navigation: true,
-  navigationPosition: 'right',
-  navigationTooltips: ['First page', 'Second page', 'Third and last page']
+//Instagram API Access token
+var feed = new Instafeed({
+  accessToken: 'IGQVJVblRJTWZAzUnJUVU12NHNnV1RndkdoWjR6dmNMdVNUdndGVTRncWNvMjBWS2hKdGhXeEpZASGVTSW9jdGpHVFpKVWFsWWJXWEVya0x1RkV4c3BiZADBIeWhsV0k0THpWeEg0NEtJZAnNoOFhOQm82MAZDZD'
 });
+feed.run();
 
 // Åben/luk burgermenu
 function aabenLuk() {
@@ -32,6 +30,49 @@ function navUL(index) {
   } else {
     roterpil.style.transform = "rotate(180deg)";
   }
+}
+
+// Slideshow
+var anmeldIndex = 1;
+showSlides(anmeldIndex);
+
+function plusSlides(n) {
+    showSlides(anmeldIndex += n);
+}
+
+function nuvaerende(n) {
+    showSlides(anmeldIndex = n);
+}
+
+// Henter elementer fra HTML
+function showSlides(n) {
+    var am;
+    var anmeld = document.getElementsByClassName("anmeldelse");
+    var prikkerne = document.getElementsByClassName("prik");
+    if (n > anmeld.length) {
+        anmeldIndex = 1
+    }
+    if (n < 1) {
+        anmeldIndex = anmeld.length
+    }
+    for (am = 0; am < anmeld.length; am++) {
+        anmeld[am].style.display = "none";
+    }
+    for (am = 0; am < prikkerne.length; am++) {
+        prikkerne[am].className = prikkerne[am].className.replace("aktive", "");
+    }
+    // display:none i CSS ændres til display: block
+    anmeld[anmeldIndex - 1].style.display = "block";
+    // Giver farve på prikkens respektive slide
+    prikkerne[anmeldIndex - 1].className += " aktive";
+}
+
+// Loader automatisk funktionen når man åbner siden
+window.onload = function () {
+  // 15 sekunders interval mellem skift af anmeldelse
+    setInterval(function () {
+        plusSlides(1);
+    }, 15000);
 }
 
 var toggle1 = true

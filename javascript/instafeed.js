@@ -32,7 +32,7 @@
       sort: null,
       success: null,
       target: "instafeed",
-      template: '<a href="{{link}}"><div class="img-featured-container"><div class="img-backdrop"></div><div class="description-container"><p class="caption">{{caption}}</p><span class="likes"><i class="fas fa-heart"></i> {{likes}}</span><span class="comments"><i class="fas fa-comment"></i> {{comments}}</span></div><img src="{{image}}" class="img-responsive"></div></a></div>',
+      template: '<div class="img-featured-container"><div class="img-backdrop"></div><div class="description-container"><p class="caption">{{caption}}</p><span class="likes"><a href="{{link}}"><i class="fas fa-heart"></i></a></span><span class="comments"><a href="{{link}}"><i class="fas fa-comment"></a></i></span></div><img src="{{image}}" class="img-responsive"></div></div>',
       templateBoundaries: [ "{{", "}}" ],
       transform: null
     };

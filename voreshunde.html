@@ -11,11 +11,8 @@
     <meta name=”robots” content="index, follow"> -->
     <link rel="stylesheet" href="https://use.typekit.net/zlh4kzy.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="icon" type="image/x-icon" href="img/KKfavicon.png" />
-    <script type="text/javascript" src="javascript/scrolloverflow.min.js"></script>
-    <script src="javascript/fullpage.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
@@ -274,7 +271,16 @@
             </div>
         </footer>
     </section>
-
+    <script type="text/javascript" src="javascript/scrolloverflow.min.js"></script>
+    <script src="javascript/fullpage.js"></script>
     <script src="javascript/app.js"></script>
-
+    <script>
+        // Fullpage.js library anchors - tillader at linke internt på siden. Indsat i HTML for unik myFullpage variabel
+         var myFullpage = new fullpage('#fullpage', {
+          anchors: ['vores-hunde', 'franske-bulldogs', 'staffordshire', 'sektion4', 'kontakt'],
+          navigation: true,
+          navigationPosition: 'right',
+          navigationTooltips: ['Vores hunde', 'Franske bulldogs', 'Staffordshire Bull Terriere', 'sektion4', 'Kontakt os']
+        });
+            </script>
 </body></html>
