@@ -191,12 +191,12 @@
 
   /* --------------- INDEX --------------- */
   .overview-section {
-    margin-top: 5%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+      margin-top: 5%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
 
   .overview {
@@ -206,7 +206,8 @@
       justify-content: space-around;
   }
 
-  .upper, .lower {
+  .upper,
+  .lower {
       width: 15vw;
       height: 15vw;
       margin: 1em;
@@ -232,25 +233,28 @@
 
   .upper1 {
       background-image: linear-gradient(rgba(245, 245, 245, 0.5), rgba(99, 99, 99, 0.7)),
-      url('../img/Tre-Tosser.JPG');
+          url('../img/Tre-Tosser.JPG');
   }
 
   .upper2 {
-    background-image: linear-gradient(rgba(245, 245, 245, 0.5), rgba(99, 99, 99, 0.7)),
-    url('../img/om-os-billede.jpg');
+      background-image: linear-gradient(rgba(245, 245, 245, 0.5), rgba(99, 99, 99, 0.7)),
+          url('../img/om-os-billede.jpg');
   }
 
   .lower1 {
-    background-image: linear-gradient(rgba(245, 245, 245, 0.5), rgba(99, 99, 99, 0.7)),
-    url('../img/staffordshire_hvalp.jpg');
+      background-image: linear-gradient(rgba(245, 245, 245, 0.5), rgba(99, 99, 99, 0.7)),
+          url('../img/staffordshire_hvalp.jpg');
   }
 
   .lower2 {
-    background-image: linear-gradient(rgba(245, 245, 245, 0.5), rgba(99, 99, 99, 0.7)),
-    url('../img/Killian-kuld.jpg');
+      background-image: linear-gradient(rgba(245, 245, 245, 0.5), rgba(99, 99, 99, 0.7)),
+          url('../img/Killian-kuld.jpg');
   }
 
-  .upper1, .upper2, .lower1, .lower2 {
+  .upper1,
+  .upper2,
+  .lower1,
+  .lower2 {
       border-radius: 25px;
       -webkit-box-shadow: 0px 8px 9px 1px rgba(0, 0, 0, 0.33);
       -moz-box-shadow: 0px 8px 9px 1px rgba(0, 0, 0, 0.33);
@@ -265,10 +269,13 @@
       transition: all 0.1s ease-in-out;
   }
 
-  .upper1:hover, .upper2:hover, .lower1:hover, .lower2:hover {
-    filter: brightness(50%); 
-    -webkit-filter: 
-    brightness(50%); 
+  .upper1:hover,
+  .upper2:hover,
+  .lower1:hover,
+  .lower2:hover {
+      filter: brightness(50%);
+      -webkit-filter:
+          brightness(50%);
   }
 
 
@@ -610,7 +617,7 @@
       transform: translateY(-5px);
   }
 
-  .img-featured-container:hover > .img-backdrop {
+  .img-featured-container:hover>.img-backdrop {
       opacity: 1;
   }
 
@@ -632,7 +639,7 @@
       margin: 0 auto;
   }
 
-  footer > .logo_maerker,
+  footer>.logo_maerker,
   .some_ikoner,
   address {
       width: 33%;
@@ -1473,11 +1480,12 @@
       align-items: center;
   }
 
-  .om-os-intro img, .om-os-afslutning img {
-    margin: 1.5em 0;
-    width: 35vw;
-    border-radius: 25px;
-}
+  .om-os-intro img,
+  .om-os-afslutning img {
+      margin: 1.5em 0;
+      width: 35vw;
+      border-radius: 25px;
+  }
 
   .vores-vaerdier {
       width: 75%;
@@ -1549,20 +1557,28 @@
       cursor: pointer;
   }
 
-  #ansvarlighed, #abenhed, #omsorg {
-    background: white;
-    background: linear-gradient(187deg, rgba(255, 255, 255, 0.5) 68%, rgba(255, 255, 255, 0.2) 100%);
-      padding: 2em;
+  #ansvarlighed,
+  #abenhed,
+  #omsorg {
+      background: white;
+      background: linear-gradient(187deg, rgba(255, 255, 255, 0.5) 68%, rgba(255, 255, 255, 0.2) 100%);
+      padding: 3em 3em 2em 3em;
       margin-top: 1em;
       border-radius: 25px;
   }
 
+  #ansvarlighed h1,
+  #abenhed h1,
+  #omsorg h1 {
+      font-size: xx-large;
+  }
+
   .luk-vaerdi-warp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1em;
- }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1.5em;
+  }
 
   #ansvarlighed {
       display: none;
@@ -1577,15 +1593,15 @@
   }
 
   .hvemervih1 {
-    font-family: sanvito-pro, sans-serif;
-    margin: 0;
-    font-size: 6vw;
-    color: #F4B685;
+      font-family: sanvito-pro, sans-serif;
+      margin: 0;
+      font-size: 6vw;
+      color: #F4B685;
   }
 
   .afslutning-tekst span a {
-    color: black;
-}
+      color: black;
+  }
 
   .vaerdip {
       font-family: sanvito-pro, sans-serif;
@@ -1593,8 +1609,8 @@
   }
 
   .vaerdi img {
-    width: 10vw;
-}
+      width: 10vw;
+  }
 
   .luk-vaerdi {
       margin: 0 auto;
@@ -1603,9 +1619,10 @@
       border: none;
       color: #F8FBFF;
       cursor: pointer;
+      padding: 0.25em 1em;
   }
 
-  .luk-vaerdi 
+  .luk-vaerdi
 
   /* --------------------------------------------------- Hunde profiler ------------------------------------------------*/
   .kobsprocesbody {
@@ -2376,7 +2393,8 @@
           width: 100%;
       }
 
-      .om-os-intro img, .om-os-afslutning img {
+      .om-os-intro img,
+      .om-os-afslutning img {
           margin: 1.5em 0;
           width: 75vw;
       }
@@ -2397,13 +2415,13 @@
       }
 
       .vaerdip {
-        font-family: sanvito-pro, sans-serif;
-        font-size: 4vw;
-    }
+          font-family: sanvito-pro, sans-serif;
+          font-size: 4vw;
+      }
 
-    .vaerdi img {
-        width: 20vw;
-    }
+      .vaerdi img {
+          width: 20vw;
+      }
 
       .vl {
           border-color: transparent;
@@ -2424,25 +2442,26 @@
       }
 
       .hvemervih1 {
-        font-size: 12vw;
+          font-size: 12vw;
       }
 
       .faq-icontop {
-        margin-bottom: 3em;
-    }
+          margin-bottom: 3em;
+      }
 
-    .upper, .lower {
-        width: 30vw;
-        height: 30vw;
-        max-width: 200px;
-        max-height: 200px;
-        margin: 1em;
-        background-position: center;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+      .upper,
+      .lower {
+          width: 30vw;
+          height: 30vw;
+          max-width: 200px;
+          max-height: 200px;
+          margin: 1em;
+          background-position: center;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
   }
 
   @media screen and (max-width:1048px) {
