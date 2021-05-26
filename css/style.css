@@ -533,8 +533,8 @@
       opacity: 1;
   }
 
-  .fa-heart:hover {
-      color: red !important;
+  .likes:hover {
+      color: red;
   }
 
   .comments:hover {
@@ -1165,7 +1165,7 @@
       justify-content: space-between;
   }
 
-  .klklfk {
+  .faq-icons {
       display: flex;
       flex-direction: row;
       width: 100%;
@@ -1236,7 +1236,7 @@
       align-items: center;
   }
 
-  details {
+  .faq-table details {
       width: 50vw;
       border: 1px solid black;
       border-radius: 10px;
@@ -1244,15 +1244,15 @@
   }
 
   .nytsporgsmål {
-      border: 1px solid #a8c9ea;
+      border: 1px solid #a8c9ea !important;
   }
 
-  summary {
+  .faq-table summary {
       padding: 1em 1.5em;
       cursor: pointer;
   }
 
-  summary::marker {
+  .faq-table summary::marker {
       color: #A8C9EA;
   }
 
@@ -1392,14 +1392,22 @@
       align-items: center;
   }
 
+  .om-os-intro img, .om-os-afslutning img {
+    margin: 1.5em 0;
+    width: 35vw;
+    border-radius: 25px;
+}
+
   .vores-vaerdier {
       width: 75%;
       justify-content: center;
+      margin: 5em 0 7em 0;
   }
 
   .vores-vaerdier h1 {
       text-align: center;
-      margin-bottom: 1em;
+      margin-bottom: 0.5em;
+      color: #F4B685;
   }
 
   .om-os-tekst {
@@ -1411,9 +1419,12 @@
       text-align: center;
   }
 
-  .om-os-tekst h1,
-  .afslutning-tekst h1 {
-      margin-bottom: 0.25em;
+  .vaerdi {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 33%;
   }
 
   .alle-vaerdier {
@@ -1457,6 +1468,20 @@
       cursor: pointer;
   }
 
+  #ansvarlighed, #abenhed, #omsorg {
+    background: white;
+    background: linear-gradient(187deg, rgba(255, 255, 255, 0.5) 68%, rgba(255, 255, 255, 0.2) 100%);
+      padding: 2em;
+      margin-top: 1em;
+      border-radius: 25px;
+  }
+
+  .luk-vaerdi-warp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+ }
 
   #ansvarlighed {
       display: none;
@@ -1469,6 +1494,37 @@
   #omsorg {
       display: none;
   }
+
+  .hvemervih1 {
+    font-family: sanvito-pro, sans-serif;
+    margin: 0;
+    font-size: 6vw;
+    color: #F4B685;
+  }
+
+  .afslutning-tekst span a {
+    color: black;
+}
+
+  .vaerdip {
+      font-family: sanvito-pro, sans-serif;
+      font-size: 2vw;
+  }
+
+  .vaerdi img {
+    width: 10vw;
+}
+
+  .luk-vaerdi {
+      margin: 0 auto;
+      background-color: #A8C9EA;
+      border-radius: 25px;
+      border: none;
+      color: #F8FBFF;
+      cursor: pointer;
+  }
+
+  .luk-vaerdi 
 
   /* --------------------------------------------------- Hunde profiler ------------------------------------------------*/
   .kobsprocesbody {
@@ -1873,9 +1929,6 @@
       }
 
       /*-------------------------------------- Hunde profiler -----------------------------*/
-
-
-
       .race-profil {
           display: none;
 
@@ -2071,6 +2124,7 @@
           background-color: #A8C9EA;
           color: #F8FBFF;
       }
+
   }
 
   @media screen and (max-width:932px) {
@@ -2214,7 +2268,7 @@
           width: 95%;
       }
 
-      details {
+      .faq-table details {
           width: 80vw;
       }
 
@@ -2238,26 +2292,37 @@
 
       .om-os-tekst {
           margin: 0;
-          width: 75%;
+          width: 100%;
       }
 
-      .om-os-intro img {
+      .om-os-intro img, .om-os-afslutning img {
           margin: 1.5em 0;
+          width: 75vw;
       }
 
       .alle-vaerdier {
-          flex-direction: column;
+          flex-direction: row;
       }
 
       .om-os-afslutning {
           flex-direction: column;
-          margin: 0;
+          margin: 0 0 1em;
+
       }
 
       .afslutning-tekst {
           margin: 0;
-          width: 75%;
+          width: 100%;
       }
+
+      .vaerdip {
+        font-family: sanvito-pro, sans-serif;
+        font-size: 4vw;
+    }
+
+    .vaerdi img {
+        width: 20vw;
+    }
 
       .vl {
           border-color: transparent;
@@ -2269,12 +2334,21 @@
       }
 
       .faq-navigation-icons img {
-          width: 10vw;
+          width: 20vw;
+          max-width: 100px;
       }
 
       .faq-navigation-icons {
           flex-direction: column;
       }
+
+      .hvemervih1 {
+        font-size: 12vw;
+      }
+
+      .faq-icontop {
+        margin-bottom: 3em;
+    }
   }
 
   @media screen and (max-width:1048px) {
