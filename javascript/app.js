@@ -1,3 +1,23 @@
+// Starter med at finde alle elementer med class "toggleheart".
+var hearts = document.getElementsByClassName('toggleheart')
+// Laver en ny variabel, som er en tom array (liste), der skal bruges til at holde styr på toggle status (skift mellem farve).
+var togglehearts = []
+
+// Vi looper igennem alle hearts (altså alle "toggleheart" elementer).
+for (let index = 0; index < hearts.length; index++) {
+  // Vi definere præcis det element der klikkes på.
+  const element = hearts[index];
+  // Vi sætter en start-status på vores tomme liste.
+  togglehearts[index] = true
+  // Her registrerer vi et klik, og sætter det til en funktion. 
+  element.onclick = function (event) {
+    // Vi ændrer farven afhængigt af status (true eller false).
+    event.target.style.color = togglehearts[index] ? "#F4B685" : 'white';
+    // Ved brug af "!" (negerer), toggler vi mellem true og false (de to farver).
+    togglehearts[index] = !togglehearts[index]
+  }
+} 
+
 //Instagram API Access token
 var feed = new Instafeed({
   accessToken: 'IGQVJVblRJTWZAzUnJUVU12NHNnV1RndkdoWjR6dmNMdVNUdndGVTRncWNvMjBWS2hKdGhXeEpZASGVTSW9jdGpHVFpKVWFsWWJXWEVya0x1RkV4c3BiZADBIeWhsV0k0THpWeEg0NEtJZAnNoOFhOQm82MAZDZD'
@@ -76,30 +96,6 @@ window.onload = function () {
         plusSlides(1);
     }, 15000);
 }
-
-
-
-// Starter med at finde alle elementer med class "toggleheart".
-var hearts = document.getElementsByClassName('toggleheart')
-// Laver en ny variabel, som er en tom array (liste), der skal bruges til at holde styr på toggle status (skift mellem farve).
-var togglehearts = [true, true, true, true, false]
-
-// Vi looper igennem alle hearts (altså alle "toggleheart" elementer).
-for (let index = 0; index < hearts.length; index++) {
-  // Vi definere præcis det element der klikkes på.
-  const element = hearts[index];
-  // Vi sætter en start-status på vores tomme liste.
-  togglehearts[index] = true
-  // Her registrerer vi et klik, og sætter det til en funktion. 
-  element.onclick = function (event) {
-    // Vi ændrer farven afhængigt af status (true eller false).
-    event.target.style.color = togglehearts[index] ? "#F4B685" : 'white';
-    // Ved brug af "!" (negerer), toggler vi mellem true og false (de to farver).
-    togglehearts[index] = !togglehearts[index]
-  }
-}
-
-
 
 
 
