@@ -529,7 +529,7 @@
       transform: translateY(-5px);
   }
 
-  .img-featured-container:hover>.img-backdrop {
+  .img-featured-container:hover > .img-backdrop {
       opacity: 1;
   }
 
@@ -551,7 +551,7 @@
       margin: 0 auto;
   }
 
-  footer>.logo_maerker,
+  footer > .logo_maerker,
   .some_ikoner,
   address {
       width: 33%;
@@ -1475,6 +1475,57 @@
       background-color: #f5ebe9;
   }
 
+  /*---------------------------------- Section 1 --------------------------*/
+  .vores-hunde-fig {
+      height: auto;
+      margin: 0;
+      border-radius: 20px;
+      background-color: rgba(245, 235, 233, 0.6);
+  }
+
+  .vores-hunde-h1 {
+      font-family: sanvito-pro, sans-serif;
+      font-size: 50pt;
+      margin-top: -20%;
+  }
+
+  .vores-hunde-h2 {
+      font-family: haboro, sans-serif;
+      font-size: 26pt;
+      margin: -3%;
+  }
+
+
+
+  .fig1-hunde {
+      height: 89%;
+      width: 50%;
+      background-image: url(../img/staff-stella7.JPG);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
+      position: fixed;
+      z-index: -10;
+      left: 0px;
+      top: 215px;
+
+  }
+
+  .fig2-hunde {
+      height: 89%;
+      width: 50%;
+      background-image: url(../img/fransk-Fannie-Hawkeye-Havana.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
+      position: fixed;
+      z-index: -10;
+      right: 0px;
+      top: 215px;
+
+  }
+
+  /*---------------------------------- Section 2 --------------------------*/
   .race-profil {
       font-family: sanvito-pro, sans-serif;
       font-size: 28pt;
@@ -1639,6 +1690,52 @@
       width: 86%;
   }
 
+  /* ----------------------- Section 4 --------------------*/
+  .staff {
+      margin-left: 0px;
+      ;
+  }
+
+  .bitch .profil-overskrift {
+      margin-top: -2%;
+  }
+
+  .buffy {
+      margin-left: 9%;
+  }
+
+  .staff .race-profil {
+      margin-top: -6%;
+      padding-bottom: 4%;
+  }
+
+  /* ------------------------------------------------------ 404 ------------------------------------------*/
+
+  .fejl-billede {
+      height: 60%;
+      padding: 5% 0 0 0;
+  }
+
+  .fejl-h2 {
+      font-family: sanvito-pro, sans-serif;
+      font-size: 50pt;
+      color: #f4b684;
+      padding-top: 5%;
+  }
+
+  .fejl-h3 {
+      font-family: haboro, sans-serif;
+      font-size: 22pt;
+      color: #f4b684;
+  }
+
+  .fejl-h4 {
+      font-family: haboro, sans-serif;
+      font-size: 18pt;
+      color: #f4b684;
+  }
+
+
 
 
   /* ----------------------------------------------------------------------------------- Media queries --------------- */
@@ -1776,6 +1873,9 @@
       }
 
       /*-------------------------------------- Hunde profiler -----------------------------*/
+
+
+
       .race-profil {
           display: none;
 
