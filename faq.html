@@ -11,7 +11,6 @@
     <!-- er lige i tvivl om det her 
     <meta name=”robots” content="index, follow"> -->
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="javascript/instafeed.js"></script>
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/zlh4kzy.css">
     <link rel="icon" type="image/x-icon" href="img/KKfavicon.png" />
@@ -71,7 +70,7 @@
             <section class="specific-target-support">
                 <h1 class="text-center">Noget specifikt vi kan hjælpe dig med?</h1>
                 <div class="faq-navigation-icons">
-                    <div class="klklfk">
+                    <div class="faq-icons faq-icontop">
                     <div class="icon-text">
                         <a href="#"><img src="./img/foder.svg"></a>
                         <p>Foder</p>
@@ -81,7 +80,7 @@
                         <p>Træning</p>
                     </div>
                 </div>
-                <div class="klklfk">
+                <div class="faq-icons">
                     <div class="icon-text">
                         <a href="#"><img src="./img/hundeloven.svg"></a>
                         <p>Hundeloven</p>
@@ -168,6 +167,293 @@
                             </div>
                         </div>
                     </details>
+
+                    <details>
+                        <summary>Hvad vil du vide om mig?</summary>
+                        <div class="faq-answer">
+                            <div class="answer-by">
+                                <img src="img/kvinde-ikon.png">
+                                <div class="by-info">
+                                    <b class="by-name">Britta, Kildehunden</b>
+                                    <p class="by-date">3 måneder siden</p>
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <p>Jeg vil gerne vide, hvor du står i livet, og hvorfor du er interesseret i at købe, og hvad du kan tilbyde en af vores hvalpe.</p>
+                            </div>
+                            <hr>
+                            <div class="answer-feedback">
+                                <div class="vote-feedback" id="vote-feedback1">
+                                    <p>Var dette nyttigt?</p>
+                                    <div class="system" id="system" onclick="feedback(1)">
+                                        <input id="feedback-after" class="pil-roter" type="image"
+                                            src="./img/pil_ned.svg" />
+                                        <vl class="vl1"></vl>
+                                        <input id="feedback-after" type="image" src="./img/pil_ned.svg" />
+                                    </div>
+                                </div>
+                                <p class="tak-feedback" id="tak-feedback1">Tak!</p>
+                                <div class="heart-like-feedback">
+                                    <i id="hjerte1" class="fas fa-heart" onclick="hjerte(1)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Er hvalpene vaccineret, chippet og har de fået ormekur?</summary>
+                        <div class="faq-answer">
+                            <div class="answer-by">
+                                <img src="img/kvinde-ikon.png">
+                                <div class="by-info">
+                                    <b class="by-name">Britta, Kildehunden</b>
+                                    <p class="by-date">2 måneder siden</p>
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <p>Ja, vores hvalpe får 3x ormekur og de bliver chippet og vaccineret (når de er 7 uger) ugen op til, at de rejser hjemmefra. Her får de også en sundhedsundersøgelse. Sundhedsbog medfølger naturligvis.</p>
+                            </div>
+                            <hr>
+                            <div class="answer-feedback">
+                                <div class="vote-feedback" id="vote-feedback2">
+                                    <p>Var dette nyttigt?</p>
+                                    <div class="system" onclick="feedback(2)">
+                                        <input class="pil-roter" type="image" src="./img/pil_ned.svg" />
+                                        <vl class="vl1"></vl>
+                                        <input type="image" src="./img/pil_ned.svg" />
+                                    </div>
+                                </div>
+                                <p class="tak-feedback" id="tak-feedback2">Tak!</p>
+                                <div class="heart-like-feedback">
+                                    <i id="hjerte2" class="fas fa-heart" onclick="hjerte(2)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Er du medlem af ernerkendte foreninger og er der stamtavle på hvalpene?</summary>
+                        <div class="faq-answer">
+                            <div class="answer-by">
+                                <img src="img/kvinde-ikon.png">
+                                <div class="by-info">
+                                    <b class="by-name">Britta, Kildehunden</b>
+                                    <p class="by-date">3 måneder siden</p>
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <p>Ja, jeg er medlem af Dansk Kennel Klub og Bulldogklubben. Jeg har taget Dansk Kennel Klubs opdrætter uddannelse og derfor har alle vores hvalpe naturligvis DKK-stamtavle.</p>
+                            </div>
+                            <hr>
+                            <div class="answer-feedback">
+                                <div class="vote-feedback" id="vote-feedback1">
+                                    <p>Var dette nyttigt?</p>
+                                    <div class="system" id="system" onclick="feedback(1)">
+                                        <input id="feedback-after" class="pil-roter" type="image"
+                                            src="./img/pil_ned.svg" />
+                                        <vl class="vl1"></vl>
+                                        <input id="feedback-after" type="image" src="./img/pil_ned.svg" />
+                                    </div>
+                                </div>
+                                <p class="tak-feedback" id="tak-feedback1">Tak!</p>
+                                <div class="heart-like-feedback">
+                                    <i id="hjerte1" class="fas fa-heart" onclick="hjerte(1)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Hvorfor valgte du disse racer?</summary>
+                        <div class="faq-answer">
+                            <div class="answer-by">
+                                <img src="img/kvinde-ikon.png">
+                                <div class="by-info">
+                                    <b class="by-name">Britta, Kildehunden</b>
+                                    <p class="by-date">2 måneder siden</p>
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <p>Jeg forelskede mig i den Franske Bulldogs kæmpe personlighed og dens sjove væsen. Staffordshire Bull Terrier for dens store hengivenhed og kærlighed overfor mennesker. Det er to virkelig gode familie hunde, som passer helt perfekt ind i vores familie.</p>
+                            </div>
+                            <hr>
+                            <div class="answer-feedback">
+                                <div class="vote-feedback" id="vote-feedback2">
+                                    <p>Var dette nyttigt?</p>
+                                    <div class="system" onclick="feedback(2)">
+                                        <input class="pil-roter" type="image" src="./img/pil_ned.svg" />
+                                        <vl class="vl1"></vl>
+                                        <input type="image" src="./img/pil_ned.svg" />
+                                    </div>
+                                </div>
+                                <p class="tak-feedback" id="tak-feedback2">Tak!</p>
+                                <div class="heart-like-feedback">
+                                    <i id="hjerte2" class="fas fa-heart" onclick="hjerte(2)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Hvor mange pladser er der på ventelisten?</summary>
+                        <div class="faq-answer">
+                            <div class="answer-by">
+                                <img src="img/kvinde-ikon.png">
+                                <div class="by-info">
+                                    <b class="by-name">Britta, Kildehunden</b>
+                                    <p class="by-date">3 måneder siden</p>
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <p>Som regel er der 4 plader på en venteliste. Herefter lukker jeg listen. Skulle der være flere hvalpe i et kuld, kontakter jeg andre der har vist interesse, og som jeg føler ville være et godt match. </p>
+                            </div>
+                            <hr>
+                            <div class="answer-feedback">
+                                <div class="vote-feedback" id="vote-feedback1">
+                                    <p>Var dette nyttigt?</p>
+                                    <div class="system" id="system" onclick="feedback(1)">
+                                        <input id="feedback-after" class="pil-roter" type="image"
+                                            src="./img/pil_ned.svg" />
+                                        <vl class="vl1"></vl>
+                                        <input id="feedback-after" type="image" src="./img/pil_ned.svg" />
+                                    </div>
+                                </div>
+                                <p class="tak-feedback" id="tak-feedback1">Tak!</p>
+                                <div class="heart-like-feedback">
+                                    <i id="hjerte1" class="fas fa-heart" onclick="hjerte(1)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Følger der noget med, når jeg køber hvalp hos dig?</summary>
+                        <div class="faq-answer">
+                            <div class="answer-by">
+                                <img src="img/kvinde-ikon.png">
+                                <div class="by-info">
+                                    <b class="by-name">Britta, Kildehunden</b>
+                                    <p class="by-date">2 måneder siden</p>
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <p>Ja, der følger naturligvis en DKK-stamtavle med. Derudover sender jeg alle mine hunde afsted med en DKK-købskontrakt, sundhedsbog, en mappe med gode råd, foder til den første tid (ca. 4 kg), et halsbånd, 2 stk. legetøj og et tæppe med mors duft.</p>
+                            </div>
+                            <hr>
+                            <div class="answer-feedback">
+                                <div class="vote-feedback" id="vote-feedback2">
+                                    <p>Var dette nyttigt?</p>
+                                    <div class="system" onclick="feedback(2)">
+                                        <input class="pil-roter" type="image" src="./img/pil_ned.svg" />
+                                        <vl class="vl1"></vl>
+                                        <input type="image" src="./img/pil_ned.svg" />
+                                    </div>
+                                </div>
+                                <p class="tak-feedback" id="tak-feedback2">Tak!</p>
+                                <div class="heart-like-feedback">
+                                    <i id="hjerte2" class="fas fa-heart" onclick="hjerte(2)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Må jeg komme og se jeres kennel?</summary>
+                        <div class="faq-answer">
+                            <div class="answer-by">
+                                <img src="img/kvinde-ikon.png">
+                                <div class="by-info">
+                                    <b class="by-name">Britta, Kildehunden</b>
+                                    <p class="by-date">3 måneder siden</p>
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <p>Selvfølgelig må du det. Du er altid velkommen til at lave en aftale om et uforpligtende besøg hos os. Hvis du er interesseret i dette, så send mig en mail og så finder vi i fællesskab en tid.</p>
+                            </div>
+                            <hr>
+                            <div class="answer-feedback">
+                                <div class="vote-feedback" id="vote-feedback1">
+                                    <p>Var dette nyttigt?</p>
+                                    <div class="system" id="system" onclick="feedback(1)">
+                                        <input id="feedback-after" class="pil-roter" type="image"
+                                            src="./img/pil_ned.svg" />
+                                        <vl class="vl1"></vl>
+                                        <input id="feedback-after" type="image" src="./img/pil_ned.svg" />
+                                    </div>
+                                </div>
+                                <p class="tak-feedback" id="tak-feedback1">Tak!</p>
+                                <div class="heart-like-feedback">
+                                    <i id="hjerte1" class="fas fa-heart" onclick="hjerte(1)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Hvor mange kuld laver du på dine hunde?</summary>
+                        <div class="faq-answer">
+                            <div class="answer-by">
+                                <img src="img/kvinde-ikon.png">
+                                <div class="by-info">
+                                    <b class="by-name">Britta, Kildehunden</b>
+                                    <p class="by-date">2 måneder siden</p>
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <p>Jeg laver max. 3 kuld på mine hunde. Anbefalingen ligger godt nok på 5, men da det også kan være hårdt for vores tæver, ønsker jeg ikke at overbelaste dem.</p>
+                            </div>
+                            <hr>
+                            <div class="answer-feedback">
+                                <div class="vote-feedback" id="vote-feedback2">
+                                    <p>Var dette nyttigt?</p>
+                                    <div class="system" onclick="feedback(2)">
+                                        <input class="pil-roter" type="image" src="./img/pil_ned.svg" />
+                                        <vl class="vl1"></vl>
+                                        <input type="image" src="./img/pil_ned.svg" />
+                                    </div>
+                                </div>
+                                <p class="tak-feedback" id="tak-feedback2">Tak!</p>
+                                <div class="heart-like-feedback">
+                                    <i id="hjerte2" class="fas fa-heart" onclick="hjerte(2)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Har I flere hunde end dem i avler på?</summary>
+                        <div class="faq-answer">
+                            <div class="answer-by">
+                                <img src="img/kvinde-ikon.png">
+                                <div class="by-info">
+                                    <b class="by-name">Britta, Kildehunden</b>
+                                    <p class="by-date">3 måneder siden</p>
+                                </div>
+                            </div>
+                            <div class="answer">
+                                <p>Ja, det har vi. Vi knytter os meget til vores hunde, og hvis de passer ind i flokken, bliver de på sofaen, også selvom de er taget ud af avlen.</p>
+                            </div>
+                            <hr>
+                            <div class="answer-feedback">
+                                <div class="vote-feedback" id="vote-feedback1">
+                                    <p>Var dette nyttigt?</p>
+                                    <div class="system" id="system" onclick="feedback(1)">
+                                        <input id="feedback-after" class="pil-roter" type="image"
+                                            src="./img/pil_ned.svg" />
+                                        <vl class="vl1"></vl>
+                                        <input id="feedback-after" type="image" src="./img/pil_ned.svg" />
+                                    </div>
+                                </div>
+                                <p class="tak-feedback" id="tak-feedback1">Tak!</p>
+                                <div class="heart-like-feedback">
+                                    <i id="hjerte1" class="fas fa-heart" onclick="hjerte(1)"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+
+                    
                     <details class="nytsporgsmål">
                         <summary>Fandt du ikke svar? Kontakt Kildehunden her</summary>
 
