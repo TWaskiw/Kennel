@@ -233,7 +233,7 @@
 
   .upper1 {
       background-image: linear-gradient(rgba(245, 245, 245, 0.5), rgba(99, 99, 99, 0.7)),
-          url('../img/Tre-Tosser.JPG');
+          url('../img/trehunde.jpg');
   }
 
   .upper2 {
@@ -310,7 +310,6 @@
       text-align: left;
       margin-left: 150px;
       margin-top: 50px;
-
   }
 
   .udforsk-knap {
@@ -782,9 +781,11 @@
       filter: brightness(90%);
       -webkit-filter: brightness(90%);
   }
+
   /* --------------- ARBEJDE HERFRA --------------- */
   .voreshundebody {
-      background-color: #F5EBE9;;
+      background-color: #F5EBE9;
+      ;
   }
 
   .voreshundeh1 {
@@ -802,7 +803,7 @@
   }
 
   .killianstor {
-    width: 100%;
+      width: 100%;
   }
 
   .buffystor {
@@ -830,13 +831,14 @@
   .ayastor {
       width: 50%;
   }
+
   .ayahund2 {
-    position: absolute;
-    top: 20%;
-    left: -15%;
-    font-family: sanvito-pro, sans-serif;
-    font-size: 35px;
-    color: #a8c9ea !important;
+      position: absolute;
+      top: 20%;
+      left: -15%;
+      font-family: sanvito-pro, sans-serif;
+      font-size: 35px;
+      color: #a8c9ea !important;
   }
 
   .orangeting {
@@ -858,19 +860,19 @@
   }
 
   .hoejreitems {
-    width: 60%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 15%;
-    margin-left: 60%;
-}
+      width: 60%;
+      display: block;
+      margin: 0 auto;
+      padding-top: 15%;
+      margin-left: 60%;
+  }
 
-.hoejreja {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    flex-wrap: wrap;
-}
+  .hoejreja {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      flex-wrap: wrap;
+  }
 
   .oversigtdata {
       display: flex;
@@ -882,10 +884,10 @@
   }
 
   .semeredata {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
   }
 
   .andendata {
@@ -914,17 +916,17 @@
   }
 
   .udstillinghund i {
-    font-size: 30px;
-    margin-right: 13px;
-    width: 30px !important;
-    height: 30px !important;
-    text-align: center;
-    color: #a8c9ea;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+      font-size: 30px;
+      margin-right: 13px;
+      width: 30px !important;
+      height: 30px !important;
+      text-align: center;
+      color: #a8c9ea;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
   }
 
   .andendata i {
@@ -941,28 +943,31 @@
       transition: all 0.3s ease-in-out;
   }
 
-  .andendata i:hover, .udstillinghund i:hover, .ekstrainfohunde i:hover, .ekstrainfohunde::marker:hover {
-    color: #97B4D2;
+  .andendata i:hover,
+  .udstillinghund i:hover,
+  .ekstrainfohunde i:hover,
+  .ekstrainfohunde::marker:hover {
+      color: #97B4D2;
   }
 
   .ekstrainfohunde i {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
   }
 
   .linjeunder {
-    margin-top: 15px;
-    border: 2px solid #a8c9ea;
-    width: 100%;
+      margin-top: 15px;
+      border: 2px solid #a8c9ea;
+      width: 100%;
   }
 
   .linjenunder {
-    margin-top: 15px;
-    border: 2px solid #F4B685;
-    width: 100%;
+      margin-top: 15px;
+      border: 2px solid #F4B685;
+      width: 100%;
   }
 
   .forstedata {
@@ -978,6 +983,7 @@
   .forstedata p {
       font-size: 19px;
   }
+
   .forstedata p span {
       font-weight: bold;
   }
@@ -1000,59 +1006,64 @@
   }
 
   .hundeinfoom {
-    margin-top: 10px;
-    text-align: left;
-    display: flex;
-    align-items: left;
-    justify-content: left;
+      margin-top: 10px;
+      text-align: left;
+      display: flex;
+      align-items: left;
+      justify-content: left;
   }
 
   .hundetekst {
-    text-align: left;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    margin: 0 auto;
-}
+      text-align: left;
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      margin: 0 auto;
+  }
 
-.hundeinfodetails {
-    margin-top: 10px;
-}
-.ekstrainfohunde::marker {
-    color: #a8c9ea !important;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
+  .hundeinfodetails {
+      margin-top: 10px;
+  }
 
-.orangeee::marker {
-    color: #F4B685 !important;
-}
+  .ekstrainfohunde::marker {
+      color: #a8c9ea !important;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+  }
 
-.smaating {
-    margin-right: 5px !important;
-}
-.ayaekstrahunde::marker {
-    color: #F4B685 !important;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
+  .orangeee::marker {
+      color: #F4B685 !important;
+  }
 
-.ekstrainfohunde, .ayaekstrahunde {
-    font-size: 15px;
-    font-weight: bold;
-    text-align: left;
-}
-.fa-info-circle {
-    color: #a8c9ea;
-    font-size: 15px;
-    margin-right: 5px;
-}
+  .smaating {
+      margin-right: 5px !important;
+  }
+
+  .ayaekstrahunde::marker {
+      color: #F4B685 !important;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+  }
+
+  .ekstrainfohunde,
+  .ayaekstrahunde {
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+      cursor: pointer;
+  }
+
+  .fa-info-circle {
+      color: #a8c9ea;
+      font-size: 15px;
+      margin-right: 5px;
+  }
 
   .voreshundehead {
       display: block;
@@ -1078,7 +1089,7 @@
   }
 
   .hunderace1 {
-      background-image: linear-gradient(187deg, rgba(232, 232, 232, 0.6881127450980392) 10%, rgba(255, 255, 255, 0.274) 100%), url(../img/staff-stella7.JPG);
+      background-image: linear-gradient(187deg, rgba(232, 232, 232, 0.6881127450980392) 10%, rgba(255, 255, 255, 0.274) 100%), url('../img/staffordshirestella.jpg');;
       background-position: 85% 0%;
   }
 
@@ -1119,7 +1130,8 @@
       display: none;
   }
 
-  .hunderace1 h3, .hunderace2 h3 {
+  .hunderace1 h3,
+  .hunderace2 h3 {
       line-height: 85vh;
       text-align: center;
   }
@@ -1130,7 +1142,7 @@
   }
 
   .hunderace1:hover {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/staff-stella7.JPG);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/staffordshirestella.jpg');
   }
 
   .hunderace2:hover {
@@ -1153,11 +1165,11 @@
   }
 
   .fejl-billedehunde {
-    display: block;
-    margin: 0 auto;
-    min-width: 320px;
-    width: 38%;
-    padding: 4% 0 0 0;
+      display: block;
+      margin: 0 auto;
+      min-width: 320px;
+      width: 38%;
+      padding: 4% 0 0 0;
   }
 
   .errorh3 {
@@ -1179,10 +1191,10 @@
       font-family: haboro-soft, sans-serif;
       line-height: 20px;
       text-align: center;
-      -webkit-transition: all 0.1s ease-in-out;
-      -moz-transition: all 0.1s ease-in-out;
-      -o-transition: all 0.1s ease-in-out;
-      -ms-transition: all 0.1s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       cursor: pointer;
       -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.32);
@@ -1201,14 +1213,15 @@
   }
 
   .ekstrainfodetails {
-    width: 36%;
-    text-align: left;
-    font-size: 13px !important;
+      width: 36%;
+      text-align: left;
+      font-size: 13px !important;
   }
 
   .ekstrainfodetails details {
       font-size: 13px !important;
   }
+
   .ekstrainfo {
       font-size: 13px !important;
   }
@@ -1232,257 +1245,9 @@
   }
 
   .ekstra-info .flille {
-    width: 96%;
-}
-
-
-
-  @media screen and (max-width:1024px) {
-    .hunderace1 h3,
-    .hunderace2 h3 {
-        display: block;
-        font-size: 30px;
-    }
-
-    .ayahund2 {
-        position: absolute;
-        left: -20%;
-        font-family: sanvito-pro, sans-serif;
-        font-size: 35px;
-        color: #a8c9ea !important;
-    }
-  }
-  @media screen and (max-width:800px) {
-    .hunderace1 h3,
-    .hunderace2 h3 {
-        font-size: 20px;
-    }
-    
-  .voreshundeh1 {
-    font-size: 30px;
-    font-family: sanvito-pro, sans-serif;
-    position: fixed;
-    margin: 0 auto;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 10%;
-}
-
-.buffyscontainer {
-    height: 140vh !important;
-}
-
-.staffyting {
-    font-size: 20px !important;
-    display: block;
-    width: 100%;
-}
-
-    .ekstrainfodetails {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .ekstrainfodetails summary {
-        margin: 0 auto;
-        display: block;
-    }
-
-    .ekstra-info {
-        width: 500px;
-        margin: 10px 0 0 150px;
-    }
-
-    .hunderace1,
-    .hunderace2 {
-        margin-top: 120px;
-    }
-
-    .ekstra-info {
-        width: 100%;
-        margin: 0px 0 0 0px;
-        padding: 0 10%;
-    }
-
-    .ekstra-info .flille {
-        width: 96%;
-    }
-
-    .ekstra-info i {
-        font-size: 15pt;
-        color: #a8c9ea;
-    }
-
-    .ekstra-info .stamdata {
-        font-size: 13px;
-    }
-
-    .ekstra-info .stamdata-data {
-        font-size: 13px;
-    }
-
-    .ekstra-info .flex-container {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-        padding: 20px 0 0 0;
-    }
-
-    .ekstra-info .flex-profil {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .killian_container {
-        display: flex;
-        flex-direction: column;
-        margin-top: 100px;
-        height: 160vh;
-    }
-
-    .hundh2 {
-        position: relative;
-        display: block;
-        margin: 0 auto;
-        font-family: sanvito-pro, sans-serif;
-        font-size: 35px;
-        color: #F4B685;
-        top: 8%;
-        left: 0;
-    }
-
-    .buffysh2 {
-        top: 8%;
-        margin-bottom: -80px;
-        margin-top: -50px;
-    }
-
-    .buffyscontainer {
-        height: 180vh !important;
-    }
-
-    .jadehund {
-        position: relative;
-        display: block;
-        margin: 0 auto;
-        font-family: sanvito-pro, sans-serif;
-        font-size: 35px;
-        color: #F4B685;
-        top: 5%;
-        left: 0;
-        margin-bottom: -50px;
-    }
-
-    .ayahund2 {
-        position: relative;
-        display: block;
-        margin: 0 auto;
-        font-family: sanvito-pro, sans-serif;
-        font-size: 35px;
-        color: #F4B685;
-        top: 8%;
-        left: 0;
-      }
-  .killianstor, .ayastor, .jadestor, .buffystor {
-    width: 50%;
-    display: block;
-    margin: 0 auto;
+      width: 96%;
   }
 
-  .centeritems {
-      width: 100%;
-      margin: 0 auto;
-      text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.hoejreitems {
-    width: 100% !important;
-    display: flex;
-    margin: 0 auto;
-    text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.hoejreja {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    position: relative;
-    margin-top: 110px;
-}
-.oversigtdata {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
-    margin-top: 150px !important;
-    margin: 10px auto;
-}
-
-.hunde_tekst, .ekstrainfohunde, .ayaekstrahunde {
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.andendata p span {
-    font-size: 14px;
-}
-  }
-  @media screen and (min-height:1365px) {
-    .oversigtdata {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        flex-wrap: wrap;
-        margin-top: 900px !important;
-        margin: 10px auto;
-    }
-
-    .hundh2 {
-        position: relative;
-        display: block;
-        margin: 0 auto;
-        font-family: sanvito-pro, sans-serif;
-        font-size: 35px;
-        color: #F4B685;
-        top: 20%;
-        left: 0;
-    }
-
-    .killianstor {
-        width: 50%;
-    }
-  }
-
-  @media screen and (max-width: 361px) {
-    .killian_container {
-        height: 155vh;
-    }
-}
-
-@media screen and (max-width: 321px) {
-    .hunderace1 h3, .hunderace2 h3 {
-        font-size: 15px !important;
-    }
-
-    .killian_container {
-        height: 180vh !important;
-    }
-    
-    .buffyscontainer {
-        height: 180vh !important;
-    }
-}
   /* --------------- KØBSPROCESSEN --------------- */
   .section {
       text-align: center;
@@ -1500,7 +1265,7 @@
       left: 50%;
       transform: translate(-50%, -56%);
       z-index: 999;
-      padding-top: 50px;
+      padding-top: 65px;
       height: 59vh;
       width: 98%;
       margin: 0 auto;
@@ -1513,8 +1278,8 @@
   .kravtekst {
       position: relative;
       z-index: 999;
-      padding-top: 100px;
-      height: 61vh;
+      padding-top: 120px;
+      height: 65vh;
       width: 98%;
       margin: 0 auto;
       color: black;
@@ -1596,6 +1361,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 1000;
+      padding-top: 20px;
   }
 
   .kobsprocestekst h3 {
@@ -1605,7 +1371,7 @@
   }
 
   .introtekst header {
-      padding-top: 45px;
+      padding-top: 55px;
       min-width: 75%;
       width: 40%;
       max-width: 100%;
@@ -1687,6 +1453,7 @@
       text-align: center;
       font-size: 6vw;
       width: 100%;
+      padding-top: 35px;
   }
 
   .kuldcontainer img {
@@ -2057,6 +1824,7 @@
       margin-right: 0.5em;
       width: 2em;
       height: 2em;
+      border-radius: 100%;
   }
 
   .answer-by {
@@ -2164,6 +1932,27 @@
   /* FAQ slut */
 
   /* Hvem er vi */
+  .strongblaa {
+      color: #2091F9;
+      text-decoration: none;
+      filter: brightness(100%);
+      -webkit-filter: brightness(100%);
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      -ms-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+  }
+
+  .strongblaa span a {
+      color: #2091F9;
+  }
+
+  .strongblaa:hover {
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+  }
+
   .main-hvemervi {
       width: 100%;
       display: flex;
@@ -2329,56 +2118,6 @@
       background-color: #f5ebe9;
   }
 
-  /*---------------------------------- Section 1 --------------------------*/
-  .vores-hunde-fig {
-      height: auto;
-      margin: 0;
-      border-radius: 20px;
-      background-color: rgba(245, 235, 233, 0.6);
-  }
-
-  .vores-hunde-h1 {
-      font-family: sanvito-pro, sans-serif;
-      font-size: 50pt;
-      margin-top: -20%;
-  }
-
-  .vores-hunde-h2 {
-      font-family: haboro, sans-serif;
-      font-size: 26pt;
-      margin: -3%;
-  }
-
-
-
-  .fig1-hunde {
-      height: 89%;
-      width: 50%;
-      background-image: url(../img/staff-stella7.JPG);
-      background-size: cover;
-      background-repeat: no-repeat;
-      margin: 0;
-      position: fixed;
-      z-index: -10;
-      left: 0px;
-      top: 215px;
-
-  }
-
-  .fig2-hunde {
-      height: 89%;
-      width: 50%;
-      background-image: url(../img/fransk-Fannie-Hawkeye-Havana.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      margin: 0;
-      position: fixed;
-      z-index: -10;
-      right: 0px;
-      top: 215px;
-
-  }
-
   /*---------------------------------- Section 2 --------------------------*/
   .race-profil {
       font-family: sanvito-pro, sans-serif;
@@ -2442,7 +2181,6 @@
   .flex-profil {
       display: flex;
       justify-content: flex-start;
-
   }
 
   .stamdata {
@@ -2591,7 +2329,7 @@
 
 
   /* ----------------------------------------------------------------------------------- Media queries --------------- */
-  /*------------------------- Købsproces til iPhone5/Galaxy ----------------------*/
+  /*------------------------- iPhone5/Galaxy/Små phones ----------------------*/
   @media screen and (max-width: 321px) {
       .introtekst {
           height: 60vh !important;
@@ -2604,10 +2342,28 @@
       }
 
       .kravtekst {
-          height: 90vh !important;
+          height: 100vh !important;
+      }
+
+      .hunderace1 h3,
+      .hunderace2 h3 {
+          font-size: 15px !important;
+      }
+  
+      .killian_container {
+          height: 180vh !important;
+      }
+  
+      .buffyscontainer {
+          height: 180vh !important;
       }
   }
 
+  @media screen and (max-width: 361px) {
+    .killian_container {
+        height: 155vh;
+    }
+}
   /*------------------------- Købsproces til mobil ----------------------*/
   @media screen and (max-width:533px) {
       .logotekst {
@@ -2621,6 +2377,10 @@
       .kuldh2 {
           margin-top: 100px !important;
       }
+
+      .kravtekst {
+          height: 100vh !important;
+      }
   }
 
   /*------------------------- Velkomst ----------------------*/
@@ -2630,7 +2390,6 @@
           text-align: center;
           margin-left: 0px;
           margin-top: 100px;
-
       }
 
       .l_velkommen {
@@ -2648,7 +2407,7 @@
       }
 
       .velkommen_tekst {
-          text-align: left;
+          text-align: center;
           margin-left: 0px;
           margin-top: 30px;
           padding: 0 20px 20px 20px;
@@ -2667,6 +2426,10 @@
       /*------------------------- Købsproces responsive ----------------------*/
       .logotekst {
           font-size: 16px;
+      }
+
+      .introtekst header {
+          padding-top: 75px;
       }
 
       .introtekst {
@@ -2725,94 +2488,60 @@
       }
 
       /*-------------------------------------- Hunde profiler -----------------------------*/
-      .race-profil {
-          display: none;
-
+      .hunderace1 h3,
+      .hunderace2 h3 {
+          font-size: 20px;
       }
 
-      .race-profil2 {
-          display: block;
+      .voreshundeh1 {
+          font-size: 30px;
           font-family: sanvito-pro, sans-serif;
-          font-size: 22pt;
-          margin: 2% 0 20% 0;
+          position: fixed;
+          margin: 0 auto;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 10%;
       }
 
-      .slide-2 .race-profil2 {
-          position: absolute;
-          margin-top: 7px;
-          width: 34%;
+      .buffyscontainer {
+          height: 140vh !important;
       }
 
-      .profil-overskrift {
-          font-size: 48pt;
-          text-align: center;
-          margin-left: 0px;
-          margin-top: -15%;
-      }
-
-
-      .profil-billeder-hunde1 {
-          height: 20%;
-          position: relative;
-          margin: 5% 0 5% 0;
-      }
-
-      .profil-billeder-hunde2 {
-          height: 200px;
-          position: relative;
-          margin-top: -0%;
-          margin-left: -0%;
-      }
-
-      .profil-oversigt {
-          width: 100%;
-          margin-left: 0px;
-          margin-top: -0px;
-          padding: 0 10%;
-      }
-
-
-      .flille {
-          max-width: 68%;
-      }
-
-      .stamdata {
-          font-size: 8pt;
-      }
-
-      .stamdata-data {
-          font-size: 12pt;
-      }
-
-      .flex-profil i {
-          font-size: 20pt;
-      }
-
-      .profil-linje {
-          height: 2px;
+      .staffyting {
+          font-size: 20px !important;
+          padding-bottom: 9px !important;
+          display: block;
           width: 100%;
       }
 
-      .profil-tekst {
-          width: 100%;
-          margin-left: 0px;
-          padding: 0 10%;
+      .sodebuffy {
+          margin-top: 25px;
       }
 
-      .profil-tekst p {
-          font-size: 11pt;
-          width: 100%;
+      .ekstrainfodetails {
+          display: block;
+          margin: 0 auto;
       }
 
-      .flex-container {
-          max-width: 300px;
+      .ekstrainfodetails summary {
+          margin: 0 auto;
+          display: block;
+      }
+
+      .ekstra-info {
+          width: 500px;
+          margin: 10px 0 0 150px;
+      }
+
+      .hunderace1,
+      .hunderace2 {
+          margin-top: 120px;
       }
 
       .ekstra-info {
           width: 100%;
           margin: 0px 0 0 0px;
           padding: 0 10%;
-          display: none;
       }
 
       .ekstra-info .flille {
@@ -2825,11 +2554,11 @@
       }
 
       .ekstra-info .stamdata {
-          font-size: 9pt;
+          font-size: 13px;
       }
 
       .ekstra-info .stamdata-data {
-          font-size: 10pt;
+          font-size: 13px;
       }
 
       .ekstra-info .flex-container {
@@ -2843,48 +2572,121 @@
       .ekstra-info .flex-profil {
           display: flex;
           justify-content: flex-start;
-
       }
 
-      .udstilling {
+      .killian_container {
+          display: flex;
+          flex-direction: column;
+          margin-top: 100px;
+          height: 160vh;
+      }
+
+      .hundh2 {
+          position: relative;
+          display: block;
+          margin: 0 auto;
+          font-family: sanvito-pro, sans-serif;
+          font-size: 35px;
+          color: #F4B685;
+          top: 8%;
+          left: 0;
+      }
+
+      .buffysh2 {
+          top: 8%;
+          margin-bottom: -80px;
+          margin-top: -50px;
+      }
+
+      .buffyscontainer {
+          height: 180vh !important;
+      }
+
+      .jadehund {
+          position: relative;
+          display: block;
+          margin: 0 auto;
+          font-family: sanvito-pro, sans-serif;
+          font-size: 35px;
+          color: #F4B685;
+          top: 5%;
+          left: 0;
+          margin-bottom: -50px;
+      }
+
+      .ayahund2 {
+          position: relative;
+          display: block;
+          margin: 0 auto;
+          font-family: sanvito-pro, sans-serif;
+          font-size: 35px;
+          color: #F4B685;
+          top: 8%;
+          left: 0;
+      }
+
+      .killianstor,
+      .ayastor,
+      .jadestor,
+      .buffystor {
+          width: 50%;
+          display: block;
+          margin: 0 auto;
+      }
+
+      .centeritems {
           width: 100%;
-          font-size: 10pt;
+          margin: 0 auto;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
       }
 
-
-      .bitch {
-          margin-left: 0%;
+      .hoejreitems {
+          width: 100% !important;
+          display: flex;
+          margin: 0 auto;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          padding-top: 150px;
       }
 
-      .bitch .profil-overskrift {
-          margin-top: 15%;
-
-      }
-
-      .bitch .profil-tekst p {
+      .hoejreja {
+          display: flex;
+          justify-content: space-between;
           width: 100%;
+          flex-wrap: wrap;
+          margin: 0 auto;
+          position: relative;
+          margin-top: 200px;
       }
 
-      .bitch i {
-          color: #f4b684;
+      .oversigtdata {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          flex-wrap: wrap;
+          margin-top: 150px !important;
+          margin: 10px auto;
       }
 
-      .bitch .profil-linje {
-          border: solid 1px #f4b684;
-          background-color: #f4b684;
+      .hunde_tekst,
+      .ekstrainfohunde,
+      .ayaekstrahunde {
+          margin-right: 10px;
+          margin-left: 10px;
       }
 
-      .bitch .ekstra-info .flille {
-          width: 101%;
+      .andendata p span {
+          font-size: 14px;
       }
 
-      .bitch .flille {
-          width: 82%;
-      }
-
-
-
-      /*-----------------------------------------*/
+      /* Instagram */
 
       .instating img {
           width: 8em;
@@ -3160,10 +2962,29 @@
           justify-content: center;
           align-items: center;
       }
+
+      .overview-section a {
+        font-size: 4vw;
+    }
+  }
+
+  @media screen and (max-width:1024px) {
+      .hunderace1 h3,
+      .hunderace2 h3 {
+          display: block;
+          font-size: 30px;
+      }
+
+      /* Position af Aya + header på vores hunde */
+      .ayahund2 {
+          position: absolute;
+          font-family: sanvito-pro, sans-serif;
+          font-size: 35px;
+          color: #a8c9ea !important;
+      }
   }
 
   @media screen and (max-width:1048px) {
-
       /* Navigationsbar - så vi ikke behøver lave burgermenu før 933px */
       #menu,
       .menupunkt {
@@ -3178,3 +2999,30 @@
           height: 72vh;
       }
   }
+
+/* iPad Pro */
+  @media screen and (min-height:1365px) {
+    .oversigtdata {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 900px !important;
+        margin: 10px auto;
+    }
+
+    .hundh2 {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        font-family: sanvito-pro, sans-serif;
+        font-size: 35px;
+        color: #F4B685;
+        top: 20%;
+        left: 0;
+    }
+
+    .killianstor {
+        width: 50%;
+    }
+}

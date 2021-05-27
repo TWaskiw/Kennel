@@ -89,7 +89,7 @@ html.fp-enabled,
 }
 
 .fp-controlArrow.fp-prev {
-    left: 9px !important;
+    left: 20px !important;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
     border-color: transparent #a8c9ea transparent transparent;
@@ -98,7 +98,7 @@ html.fp-enabled,
 
 
 .fp-controlArrow.fp-next {
-    right: 9px !important;
+    right: 20px !important;
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #a8c9ea;
     top: 30% !important;
