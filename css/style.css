@@ -852,7 +852,6 @@
 
   .centeritems {
       display: flex;
-      align-items: left;
       justify-content: left;
       margin-left: 5%;
       position: absolute;
