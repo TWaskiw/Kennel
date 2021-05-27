@@ -19,43 +19,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
-<body class="kobsprocesbody">
+<body class="voreshundebody">
     <header>
         <nav>
             <a href="javascript:void(0);" class="bmenu" onclick="aabenLuk()">&#9776;</a>
-            <div class="logotekstbillede">
-                <div class="logobilledecontainer">
-                    <img class="logobillede" src="img/KK-logo.png">
+            <a href="index.html" class="navlogolink">
+                <div class="logotekstbillede">
+                    <div class="logobilledecontainer">
+                        <img class="logobillede" src="img/KK-logo.png" alt="Kennel Kildehunden logo">
+                    </div>
+                    <p class="logotekst">Kennel Kildehunden</p>
                 </div>
-                <p class="logotekst">Kennel Kildehunden</p>
-            </div>
+            </a>
             <ul id="menu" class="navbar">
-                <li class="menupunkt"><a href="#" class="menuer">Hvem er vi?</a></li>
+                <li class="menupunkt"><a href="hvemervi.html" class="menuer">Hvem er vi?</a></li>
                 <li class="menupunkt">
-                    <a href="#" class="menuer">Vores hunde<span onclick="navUL('1')"><img src="img/pil_ned.svg" id="pilned1"></span></a>
+                    <a href="vores-hunde.html" class="menuer">Vores hunde<span onclick="navUL('1')"><img src="img/pil_ned.svg" id="pilned1" alt="Pil ned ikon"></span></a>
                     <ul id="ulListe1">
-                        <li><a href="">Hundeprofiler</a></li>
-                        <li><a href="">Kommende kuld</a></li>
+                        <li><a href="vores-hunde.html">Hundeprofiler</a></li>
                     </ul>
                 </li>
                 <li class="menupunkt">
-                    <a href="#" class="menuer">Køb hund<span onclick="navUL('2')"><img src="img/pil_ned.svg" id="pilned2"></span></a>
+                    <a href="kobsprocessen.html" class="menuer">Køb hund<span onclick="navUL('2')"><img src="img/pil_ned.svg" id="pilned2" alt="Pil ned ikon"></span></a>
                     <ul id="ulListe2">
-                        <li><a href="">Hvad skal der til?</a></li>
-                        <li><a href="">Venteliste</a></li>
+                        <li><a href="kobsprocessen.html#krav">Hvad skal der til?</a></li>
+                        <li><a href="kobsprocessen.html#venteliste-kuld">Venteliste & kommende kuld</a></li>
                     </ul>
                 </li>
                 <li class="menupunkt">
-                    <a href="#" class="menuer">Råd og vejledning<span onclick="navUL('3')"><img src="img/pil_ned.svg" id="pilned3"></span></a>
+                    <a href="faq.html" class="menuer">Råd og vejledning<span onclick="navUL('3')"><img src="img/pil_ned.svg" id="pilned3" alt="Pil ned ikon"></span></a>
                     <ul id="ulListe3">
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">Foder</a></li>
-                        <li><a href="">Træning</a></li>
-                        <li><a href="">Hundeloven</a></li>
-                        <li><a href="">Forsikring</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="404.html">Foder</a></li>
+                        <li><a href="404.html">Træning</a></li>
+                        <li><a href="404.html">Hundeloven</a></li>
+                        <li><a href="404.html">Forsikring</a></li>
                     </ul>
                 </li>
-                <li class="menupunkt"><a href="#" class="menuer">Galleri</a>
+                <li class="menupunkt"><a href="404.html" class="menuer">Galleri</a>
                 </li>
             </ul>
         </nav>
@@ -64,72 +65,74 @@
     <main id="fullpage">
 
 
-        <div class="section">
-            <h2 class="fejl-h2">404 - Error</h2>
+        <section class="section">
+            <h2 class="fejl-h2">404</h2>
+            <h3 class="errorh3">Siden er under ombygning</h3>
+            <form action="index.html" class="forsideform">
+                <button type="submit" method="get" class="forsideb"><i class="fas fa-chevron-circle-left"></i>Tilbage til forside</button>
+            </form>
             <img src="img/fejl-1-billede.png" alt="Staffordshire bull terrier hvalpe" class="fejl-billede">
-        </div>
+        </section>
         <section class="section fp-auto-height">
             <footer>
                 <address>
                     <div class="adressecontainer">
-                        <h4 class="kontaktadresse">Kontakt</h4>
-                        <a href="mailto:kildehunden24@gmail.com"><span><img src="img/kontaktemail.png" class="kildehundenmail"></span>kildehunden24@gmail.com</a>
+                        <p class="kontaktadresse">Kontakt</p>
+                        <a href="mailto:kildehunden24@gmail.com"><span><img src="img/kontaktemail.png" alt="Email vector ikon" class="kildehundenmail"></span>kildehunden24@gmail.com</a>
                         <br>
-                        <a href="https://goo.gl/maps/Qj7NRTH6eyiFj1iu8"><span><img src="img/hus-ikon.png" class="kildehundenadresse"></span>Silkeborg, 8600</a>
+                        <a href="https://goo.gl/maps/Qj7NRTH6eyiFj1iu8"><span><img src="img/hus-ikon.png" alt="Hus vector ikon" class="kildehundenadresse"></span>Silkeborg, 8600</a>
                     </div>
                 </address>
 
                 <div class="logo_maerker">
                     <div class="maerker_tooltip">
-                        <img src="img/agria-maerke.png">
+                        <img src="img/agria-maerke.png" alt="Agria logo mærke">
                         <p class="maerker_tekst">Agria samarbejds-<br>partner/hvalpe<br>forsikring<br><span><a href="https://www.agria.dk/">Besøg Agria</a></span></p>
                     </div>
                     <div class="maerker_tooltip">
-                        <img src="img/bulldogklubben-maerke.png">
+                        <img src="img/bulldogklubben-maerke.png" alt="Bulldogklubben logo mærke">
                         <p class="maerker_tekst">Medlem af den ældste specialklub under DKK<br><a href="https://www.bulldogklubben.dk/">Besøg BDK</a></p>
                     </div>
                     <div class="maerker_tooltip">
-                        <img src="img/FCI-maerke.png">
+                        <img src="img/FCI-maerke.png" alt="Fédération Cynologique Internationale logo mærke">
                         <p class="maerker_tekst">Medlem af den internationale stambogsførende organisation<br><a href="http://www.fci.be/en/">Besøg FCI</a>
                         </p>
                     </div>
                     <div class="maerker_tooltip">
-                        <img src="img/dkk-uddannet-maerke.png">
+                        <img src="img/dkk-uddannet-maerke.png" alt="Dansk Kennel Klubs uddannelse mærke">
                         <p class="maerker_tekst">Dansk Kennel Klubs opdrætter uddannelse siden 2015<br><a href="https://www.dkk.dk/kurser-prover-og-traening/deltag-i-kurser-hos-dkk/opdr%C3%A6tteruddannelser">Besøg
                                 DKK</a></p>
                     </div>
                     <div class="maerker_tooltip">
-                        <img src="img/DKK-maerke.png">
+                        <img src="img/DKK-maerke.png" alt="Dansk Kennel Klub logo mærke">
                         <p class="maerker_tekst">Medlem af den nationale stambogsførende organisation<br><a href="https://www.dkk.dk/alle-emner/kennelm%C3%A6rke">Besøg DKK</a><br></p>
                     </div>
                 </div>
 
                 <div class="some_ikoner">
-                    <a href="#">
-                        <img src="img/facebook-ikon.png">
+                    <a href="https://www.facebook.com/groups/776745872406251">
+                        <img src="img/facebook-ikon.png" alt="Facebook logo ikon">
                     </a>
-                    <a href="#">
-                        <img src="img/instagram-ikon.png">
+                    <a href="https://www.instagram.com/kennel_kildehunden">
+                        <img src="img/instagram-ikon.png" alt="Instagram logo ikon">
                     </a>
                 </div>
             </footer>
         </section>
     </main>
 
-    <script type="text/javascript" src="javascript/scrolloverflow.min.js"></script>
+    <script src="javascript/scrolloverflow.min.js"></script>
     <script src="javascript/fullpage.js"></script>
     <script src="javascript/app.js"></script>
     <script>
         // Fullpage.js library anchors - tillader at linke internt på siden. Indsat i HTML for unik myFullpage variabel
         var myFullpage = new fullpage('#fullpage', {
-            anchors: ['vores-hunde', 'franske-bulldogs', 'staffordshire', 'sektion4', 'kontakt'],
+            anchors: ['404-error', 'kontakt'],
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: ['Vores hunde', 'Franske bulldogs', 'Staffordshire Bull Terriere', 'sektion4', 'Kontakt os']
+            navigationTooltips: ['', 'Oplysninger']
         });
-
     </script>
-
     <script src="javascript/app.js"></script>
 
 </body>
