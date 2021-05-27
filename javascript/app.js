@@ -25,7 +25,7 @@ var feed = new Instafeed({
 feed.run(); 
 
 
-// Åben/luk burgermenu
+// Åben/luk burgermenu 
 function aabenLuk() {
   const burgeren = document.getElementById("menu");
   if (burgeren.style.display === "block") {
@@ -98,7 +98,7 @@ window.onload = function () {
 }
 
 
-
+// Kontaktformular
 function kontaktGennemfort() {
   const name = document.getElementById('name')
   const email = document.getElementById('email')
@@ -107,17 +107,20 @@ if (name.value !== "" && email.value !== "") {
 }
 }
 
+// Display "tak" efter up/downvote
 function feedback(index) {
   document.getElementById('vote-feedback' + index).style.display = 'none';
   document.getElementById('tak-feedback' + index).style.display = 'block';
 }
 
+// Åben/luk værdier
 function resetVaerdier() {
   document.getElementById('ansvarlighed').style.display = 'none';
   document.getElementById('abenhed').style.display = 'none';
   document.getElementById('omsorg').style.display = 'none';
 }
 
+// Luk værdi
 function vaerdier(value) {
   resetVaerdier()
   document.getElementById(value).style.display = 'block';

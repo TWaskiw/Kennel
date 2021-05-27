@@ -422,22 +422,17 @@
       margin-left: 2px;
   }
 
-  /* Position the "next button" to the right */
   .naeste {
       position: absolute;
       margin-right: 2px;
       right: 0;
   }
 
-  /* On hover, add a black background color with a little bit see-through */
-
-  /* The dot/bullet/indicator container */
   .prikker {
       padding: 20px;
       text-align: center;
   }
 
-  /* The dots/bullets/indicators */
   .prik {
       cursor: pointer;
       height: 10px;
@@ -449,18 +444,15 @@
       display: inline-block;
   }
 
-  /* Add a background color to the active dot/circle */
   .aktive,
   .prik:hover {
       background-color: #A8C9EA;
   }
 
-  /* Add an italic font style to all quotes */
   q {
       font-style: italic;
   }
 
-  /* Add a blue color to the author */
   .anmelder {
       color: #000000;
       margin-bottom: 8px;
@@ -730,7 +722,6 @@
       bottom: 100%;
       left: 50%;
       margin-left: -100px;
-      /* Use half of the width (120/2 = 60), to center the tooltip */
   }
 
   .maerker_tekst {
@@ -1008,14 +999,12 @@
       margin-top: 10px;
       text-align: left;
       display: flex;
-      align-items: left;
       justify-content: left;
   }
 
   .hundetekst {
       text-align: left;
       display: flex;
-      align-items: left;
       justify-content: left;
       margin: 0 auto;
   }
@@ -1875,7 +1864,7 @@
   }
 
   .tak-feedback {
-      font-size: normal;
+      font-style: normal;
       display: none;
   }
 
@@ -2824,7 +2813,6 @@
           bottom: 100%;
           left: 50%;
           margin-left: -63px;
-          /* Use half of the width (120/2 = 60), to center the tooltip */
       }
 
       /* Footer adresse, mærker & SoMe ikoner */
