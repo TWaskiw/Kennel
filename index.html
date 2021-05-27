@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/zlh4kzy.css">
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="icon" type="image/x-icon" href="img/KKfavicon.png" />
+    <script src="javascript/scrolloverflow.min.js"></script>
 </head>
 
 <body class="bodyindex">
@@ -32,23 +33,23 @@
             <ul id="menu" class="navbar">
                 <li class="menupunkt"><a href="hvemervi" class="menuer">Hvem er vi?</a></li>
                 <li class="menupunkt">
-                    <a href="vores-hunde" class="menuer">Vores hunde<span onclick="navUL('1')"><img
-                                src="img/pil_ned.svg" id="pilned1" alt="Pil ned ikon"></span></a>
+                    <a href="vores-hunde" class="menuer">Vores hunde</a><span onclick="navUL('1')"><img
+                            src="img/pil_ned.svg" id="pilned1" alt="Pil ned ikon"></span>
                     <ul id="ulListe1">
                         <li><a href="vores-hunde">Hundeprofiler</a></li>
                     </ul>
                 </li>
                 <li class="menupunkt">
-                    <a href="kobsprocessen" class="menuer">Køb hund<span onclick="navUL('2')"><img src="img/pil_ned.svg"
-                                id="pilned2" alt="Pil ned ikon"></span></a>
+                    <a href="kobsprocessen" class="menuer">Køb hund</a><span onclick="navUL('2')"><img
+                            src="img/pil_ned.svg" id="pilned2" alt="Pil ned ikon"></span>
                     <ul id="ulListe2">
                         <li><a href="kobsprocessen#krav">Hvad skal der til?</a></li>
                         <li><a href="kobsprocessen#venteliste-kuld">Venteliste & kommende kuld</a></li>
                     </ul>
                 </li>
                 <li class="menupunkt">
-                    <a href="faq" class="menuer">Råd og vejledning<span onclick="navUL('3')"><img src="img/pil_ned.svg"
-                                id="pilned3" alt="Pil ned ikon"></span></a>
+                    <a href="faq" class="menuer">Råd og vejledning</a><span onclick="navUL('3')"><img
+                            src="img/pil_ned.svg" id="pilned3" alt="Pil ned ikon"></span>
                     <ul id="ulListe3">
                         <li><a href="faq">FAQ</a></li>
                         <li><a href="404">Foder</a></li>
@@ -68,7 +69,7 @@
             <header>
                 <h1 class="velkommen">Velkommen</h1>
                 <h2 class="l_velkommen">til Kennel Kildehunden</h2>
-                <p class="velkommen_tekst">Et dansk og hemmeligt hobby-opdræt med base i smukke Midtjylland.
+                <p class="velkommen_tekst">Et dansk og hjemligt hobby-opdræt med base i smukke Midtjylland.
                     <br>Vi opdrætter franske bulldog og staffordshire bull terrier hvalpe med fokus <br> på sundhed og
                     et roligt temperament.
                 </p>
@@ -99,8 +100,8 @@
         </section>
         <!-- Section 3, anmeldelser + instagram -->
         <section class="section">
+            <h3 class="anmeldelserh3">Anmeldelser</h3>
             <div class="anmeldelserslide">
-
                 <div class="anmeldelse">
                     <img src="img/kvinde-vector.png" alt="Kvinde vector ikon"><br>
                     <p class="anmelder">Vibe</p>
@@ -138,13 +139,14 @@
                 <a class="forrige" onclick="plusSlides(-1)">❮</a>
                 <a class="naeste" onclick="plusSlides(1)">❯</a>
             </div>
-            <section class="kennelinstagram">
-                <h3>Del din guldklump med os på <span>Instagram</span></h3>
-                <h4>ved at bruge hashtagget <span>#kildehvalpene</span></h4>
-                <div id="instafeed" class="instating"></div>
-            </section>
         </section>
-        <!-- Section 4, footer -->
+        <!-- Section 4, instagram -->
+        <section class="section kennelinstagram">
+            <h3>Del din guldklump med os på <span>Instagram</span></h3>
+            <h4>ved at bruge hashtagget <span>#kildehvalpene</span></h4>
+            <div id="instafeed" class="instating"></div>
+        </section>
+        <!-- Section 5, footer -->
         <section class="section fp-auto-height">
             <footer>
                 <address>
@@ -202,15 +204,14 @@
     <!-- JavaScript -->
     <script src="javascript/instafeed.js"></script>
     <script src="javascript/fullpage.js"></script>
-    <script src="javascript/scrolloverflow.min.js"></script>
     <script src="javascript/app.js"></script>
     <script>
         // Fullpage.js library anchors - tillader at linke internt på siden. Indsat i HTML for unik myFullpage variabel
         var myFullpage = new fullpage('#fullpage', {
-            anchors: ['velkommen', 'kildehunden', 'anmeldelser', 'kontakt'],
+            anchors: ['velkommen', 'kildehunden', 'anmeldelser', 'instagram', 'kontakt'],
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: ['Velkommen', 'Kildehunden', 'Anmeldelser', 'Kontakt os']
+            navigationTooltips: ['Velkommen', 'Kildehunden', 'Anmeldelser', 'Instagram', 'Kontakt']
         });
     </script>
 </body>

@@ -103,7 +103,6 @@
   .menupunkt {
       line-height: 50px;
       vertical-align: middle;
-      text-align: center;
       margin: 20px 10px 10px 20px;
       padding-right: 10px;
       cursor: pointer;
@@ -112,14 +111,8 @@
   .menupunkt span img {
       width: 30px;
       height: 20px;
-      display: inline-block;
-      margin-left: 50px;
-      margin-bottom: -5px;
       display: none;
-  }
-
-  .menupunkt span {
-      border-radius: 100%;
+      margin-bottom: -5px;
   }
 
   .menupunkt ul {
@@ -133,17 +126,16 @@
   .menupunkt li a {
       background-color: #faf5f4;
       padding: 15px;
-      width: inherit;
+      width: 100%;
       vertical-align: middle;
       text-align: left;
   }
 
   #menu li a,
   #menu li p {
-      display: block;
+      display: inline-block;
       text-decoration: none;
       color: #000000;
-      white-space: nowrap;
       text-align: left;
   }
 
@@ -161,7 +153,10 @@
       margin-top: 25px;
       z-index: 999;
   }
-
+  .menupunkt a span {
+      display: flex;
+      flex-direction: row;
+  }
   /* Menupunkt hovers */
   .logobillede,
   .menupunkt li a,
@@ -341,12 +336,12 @@
 
   .fig-knap {
       text-decoration: none;
+      display: block;
+      margin: 0 auto;
+      width: inherit;
   }
 
   /* --------------- Anmeldelser --------------- */
-  .fylde {
-      height: 100vh;
-  }
 
   /* Slideshow container */
   .anmeldelserslide {
@@ -366,7 +361,11 @@
       flex-direction: column-reverse;
   }
 
-
+  .anmeldelserh3 {
+      font-size: 40px;
+      font-family: sanvito-pro, sans-serif;
+      color: #F4B685;
+  }
   /* Slides */
   .anmeldelse {
       display: none;
@@ -464,15 +463,22 @@
       font-family: sanvito-pro, sans-serif;
       font-weight: 300;
       font-style: normal;
-      padding-top: 40px;
-      width: 80%;
+      width: 100%;
       text-align: center;
       margin: 0 auto;
+      vertical-align: middle;
   }
 
   .kennelinstagram h3,
   .kennelinstagram h4 {
       color: #F4B685;
+      margin: 0 auto;
+      margin-right: 5px;
+      margin-left: 5px;
+  }
+
+  .kennelinstagram h4 {
+      margin-bottom: 20px;
   }
 
   .kennelinstagram h3 span,
@@ -481,11 +487,11 @@
   }
 
   .kennelinstagram h3 {
-      font-size: 30px;
+      font-size: 40px;
   }
 
   .kennelinstagram h4 {
-      font-size: 25px;
+      font-size: 30px;
   }
 
   .instating {
@@ -494,12 +500,10 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      padding-bottom: 40px;
-      padding-top: 30px;
   }
 
   .instating img {
-      width: 16.5em;
+      width: 20vw;
       padding: 0;
       margin-bottom: -5px;
   }
@@ -511,10 +515,9 @@
   }
 
   .img-featured-container {
-      overflow: hidden;
       position: relative;
       margin: 8px;
-      border-radius: 4px;
+      border-radius: 20px !important;
       -webkit-box-shadow: 0px 3px 31px -1px rgba(0, 0, 0, 0.88);
       -moz-box-shadow: 0px 3px 31px -1px rgba(0, 0, 0, 0.88);
       box-shadow: 0px 3px 31px -1px rgba(0, 0, 0, 0.88);
@@ -789,7 +792,7 @@
   }
 
   .killian_container {
-      height: 100vh;
+      height: 115vh;
       position: relative;
   }
 
@@ -2492,6 +2495,7 @@
           left: 50%;
           transform: translateX(-50%);
           top: 10%;
+          display: none;
       }
 
       .buffyscontainer {
@@ -2683,6 +2687,17 @@
           width: 8em;
       }
 
+      .kennelinstagram h3 {
+          font-size: 25px;
+      }
+      .kennelinstagram h4 {
+        font-size: 18px;
+    }
+
+    .anmeldelserh3 {
+        font-size: 25px;
+    }
+
       .img-featured-container .description-container {
           font-size: 0.7em;
       }
@@ -2724,6 +2739,10 @@
           position: sticky;
       }
 
+      .menupunkt span {
+          padding: 20px;
+    }
+
       .logotekstbillede {
           margin: 5px;
           margin-left: 10px;
@@ -2738,6 +2757,7 @@
           min-width: 100%;
           border-top: 1px solid black;
           margin-right: 0px;
+          margin-top: 0 !important;
           background-color: #F5EBE9;
       }
 
@@ -2749,7 +2769,7 @@
 
       .menupunkt a,
       .menupunkt p {
-          padding: 10px;
+          padding-left: 10px;
           transition: none;
       }
 
@@ -2767,11 +2787,12 @@
           min-width: 100%;
           max-width: 100%;
           padding: 20px;
+          height: 50px;
       }
 
       /* Anmeldelser - så tekst kan være i container */
       .anmeldelserslide {
-          height: 450px;
+          height: 65%;
           width: 95%;
       }
 
@@ -2956,6 +2977,19 @@
       .overview-section a {
         font-size: 4vw;
     }
+  }
+
+  @media (width:768px) {
+      .menupunkt li a {
+          height: 50px !important;
+          padding: 30px !important;
+      }
+
+      .menupunkt a {
+          height: 60px !important;
+          text-align: left;
+          vertical-align: middle;
+      }
   }
 
   @media screen and (max-width:1024px) {
