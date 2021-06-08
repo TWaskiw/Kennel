@@ -16,7 +16,8 @@ for (let index = 0; index < hearts.length; index++) {
     // Ved brug af "!" (negerer), toggler vi mellem true og false (de to farver).
     togglehearts[index] = !togglehearts[index]
   }
-} 
+}
+
 
 //Instagram API Access token
 var feed = new Instafeed({
@@ -89,13 +90,6 @@ function showSlides(n) {
     prikkerne[anmeldIndex - 1].className += " aktive";
 }
 
-// Loader automatisk funktionen når man åbner siden
-window.onload = function () {
-  // 15 sekunders interval mellem skift af anmeldelse
-    setInterval(function () {
-        plusSlides(1);
-    }, 15000);
-}
 
 
 // Kontaktformular
@@ -125,3 +119,34 @@ function vaerdier(value) {
   resetVaerdier()
   document.getElementById(value).style.display = 'block';
 }
+
+
+// Killian 
+
+/*
+// Henter modal fra HTML
+const infoModal = document.getElementById('infoModal')
+
+// Henter infoBtn fra HTML
+const infoBtn = document.getElementById('infoBtn')
+
+// Laver close funktionen
+const span = document.getElementsByClassName('close')[0];
+
+// Åben modal
+infoBtn.onclick = function () {
+    infoModal.style.display = 'block'
+};
+
+// Luk boksen med kryds
+span.onclick = function () {
+    infoModal.style.display = 'none' 
+};
+
+// Når man trykker udenfor modal = luk
+document.onclick = function (event) {
+    if (event.target == infoModal) {
+        infoModal.style.display = 'none'
+    };
+}
+*/
