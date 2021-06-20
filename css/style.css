@@ -281,8 +281,6 @@
       color: #f4b684;
       text-align: left;
       margin-left: 150px;
-
-
   }
 
   .l_velkommen {
@@ -375,6 +373,10 @@
       padding: 50px;
   }
 
+  .anmeldelse p {
+      margin-top: 10px;
+  }
+
   .containeranmeldelser {
       position: relative;
   }
@@ -401,13 +403,12 @@
   .naeste {
       cursor: pointer;
       position: absolute;
-      top: 50%;
+      top: 30%;
       width: auto;
-      margin-top: -30px;
-      padding: 6px;
+      padding: 10px;
       color: #A8C9EA;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 40px;
       border-radius: 10px;
       user-select: none;
       -webkit-transition: all 0.2s ease-in-out;
@@ -418,12 +419,12 @@
   }
 
   .forrige {
-      margin-left: 2px;
+      margin-left: 15px;
   }
 
   .naeste {
       position: absolute;
-      margin-right: 2px;
+      margin-right: 15px;
       right: 0;
   }
 
@@ -776,10 +777,69 @@
       -webkit-filter: brightness(90%);
   }
 
-  /* --------------- ARBEJDE HERFRA --------------- */
+  /* --------------- HUNDE --------------- */
+  .info_modal {
+    display: none;
+    position: fixed;
+    z-index: 1111 !important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    padding-top: 250px;
+  }
+  
+  /* Modal indhold */
+  .modal-content {
+    background-color: #F5EBE9;
+    margin: auto;
+    padding: 40px;
+    border-radius: 30px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+  /* Luk button */
+  .close {
+    margin-top: -15px;
+    color: black;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: right;
+    align-content: flex-end;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #infoBtn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+  }
+
+  #infoBtn:hover {
+      color: gray;
+  }
+  
+  #infoBtn .fa-info-circle {
+    font-size: 2vh;
+    color: #000;
+  }
+  
   .voreshundebody {
       background-color: #F5EBE9;
-      ;
+      margin: 0;
+      padding: 0;
   }
 
   .voreshundeh1 {
@@ -792,7 +852,7 @@
   }
 
   .killian_container {
-      height: 115vh;
+      height: 90vh;
       position: relative;
   }
 
@@ -849,7 +909,7 @@
       justify-content: left;
       margin-left: 5%;
       position: absolute;
-      top: 0%;
+      top: 10%;
   }
 
   .hoejreitems {
@@ -1051,8 +1111,7 @@
   }
 
   .fa-info-circle {
-      color: #a8c9ea;
-      font-size: 15px;
+      color: black;
       margin-right: 5px;
   }
 
@@ -1251,13 +1310,10 @@
 
   /* Tekstgradient */
   .introtekst {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -56%);
+      position: relative;
       z-index: 999;
-      padding-top: 65px;
-      height: 59vh;
+      padding-top: 150px;
+      height: 97vh;
       width: 98%;
       margin: 0 auto;
       color: black;
@@ -1270,29 +1326,27 @@
       position: relative;
       z-index: 999;
       padding-top: 120px;
-      height: 65vh;
+      height: 97vh;
       width: 98%;
       margin: 0 auto;
       color: black;
       background: rgb(232, 232, 232);
       background: linear-gradient(187deg, rgba(232, 232, 232, 0.6881127450980392) 68%, rgba(255, 255, 255, 0.6348914565826331) 100%);
       border-radius: 5px;
-      margin-bottom: 250px;
       text-align: center;
   }
 
   .kobsprocestekst {
       position: relative;
       z-index: 999;
-      padding-top: 150px;
-      height: 60vh;
+      padding-top: 13em;
+      height: 97vh;
       width: 98%;
       margin: 0 auto;
       color: black;
       background: rgb(232, 232, 232);
       background: linear-gradient(187deg, rgba(232, 232, 232, 0.6881127450980392) 68%, rgba(255, 255, 255, 0.6348914565826331) 100%);
       border-radius: 10px;
-      margin-bottom: 250px;
       text-align: center;
   }
 
@@ -1893,6 +1947,15 @@
       padding: 20px;
   }
 
+  .sporgomting {
+      background-color: #a8c9ea;
+      border-radius: 9px;
+  }
+
+  .sporgomting::marker {
+      color: #F5ebe9 !important; 
+  }
+
   #name,
   #email,
   #message {
@@ -2325,55 +2388,58 @@
   /* ----------------------------------------------------------------------------------- Media queries --------------- */
   /*------------------------- iPhone5/Galaxy/Små phones ----------------------*/
   @media screen and (max-width: 321px) {
-      .introtekst {
-          height: 60vh !important;
-          margin-top: 40px;
-      }
 
       .introtekst .mobiltekster p {
           font-size: 13px;
           vertical-align: text-top;
       }
 
-      .kravtekst {
-          height: 100vh !important;
-      }
-
       .hunderace1 h3,
       .hunderace2 h3 {
           font-size: 15px !important;
       }
-  
-      .killian_container {
-          height: 180vh !important;
+
+      .forstedata p {
+          font-size: 13px;
       }
-  
+
+      .hunde_tekst {
+          font-size: 13px;
+      }
+
+      .andendata, .udstillinghund {
+          font-size: 11px !important;
+      }
+
+      .udstillinghund {
+          width: 80%;
+          text-align: left;
+      }
+
+      .andendata span {
+          font-size: 12px !important;
+      }
       .buffyscontainer {
           height: 180vh !important;
       }
+
+      .info_modal {
+          padding-top: 200px !important;
+      }
+
+      .semeredata {
+        padding-bottom: 0;
+    }
   }
 
-  @media screen and (max-width: 361px) {
-    .killian_container {
-        height: 155vh;
-    }
-}
   /*------------------------- Købsproces til mobil ----------------------*/
   @media screen and (max-width:533px) {
       .logotekst {
           font-size: 13px !important;
       }
 
-      .kobsprocestekst {
-          height: 80vh !important;
-      }
-
       .kuldh2 {
           margin-top: 100px !important;
-      }
-
-      .kravtekst {
-          height: 100vh !important;
       }
   }
 
@@ -2384,6 +2450,25 @@
           text-align: center;
           margin-left: 0px;
           margin-top: 100px;
+      }
+
+      .modal-content {
+          width: 98%;
+          padding: 10px;
+      }
+
+      .udstillinghund {
+          text-align: left;
+          width: 85%;
+      }
+
+      .semeredata {
+          padding-bottom: 20px;
+      }
+
+      .close {
+          margin-top: -10px;
+          margin-right: 5px;
       }
 
       .l_velkommen {
@@ -2426,13 +2511,9 @@
           padding-top: 75px;
       }
 
-      .introtekst {
-          height: 70vh;
-      }
-
-      .kravtekst {
-          height: 80vh;
-          margin-top: -20px;
+      #infoBtn {
+          margin-left: 10px;
+          margin-top: 8px;
       }
 
       .hundeikon i {
@@ -2448,10 +2529,6 @@
 
       .mobiltekster {
           display: flex;
-      }
-
-      .kobsprocestekst {
-          height: 65vh;
       }
 
       .kobsprocestekst h3 {
@@ -2572,8 +2649,6 @@
       .killian_container {
           display: flex;
           flex-direction: column;
-          margin-top: 100px;
-          height: 160vh;
       }
 
       .hundh2 {
@@ -2630,6 +2705,7 @@
       }
 
       .centeritems {
+          top: 10%;
           width: 100%;
           margin: 0 auto;
           text-align: center;
@@ -2666,7 +2742,6 @@
           justify-content: space-between;
           width: 100%;
           flex-wrap: wrap;
-          margin-top: 150px !important;
           margin: 10px auto;
       }
 
@@ -2677,6 +2752,14 @@
           margin-left: 10px;
       }
 
+      .hunde_tekst {
+          width: 80%;
+      }
+/*
+      #myBtn {
+          margin-left: 10px;
+      }
+*/
       .andendata p span {
           font-size: 14px;
       }
@@ -3017,10 +3100,6 @@
 
       .logotekstbillede {
           margin-left: 10px;
-      }
-
-      .introtekst {
-          height: 72vh;
       }
   }
 

@@ -35,22 +35,22 @@
                 <li class="menupunkt"><a href="hvemervi" class="menuer">Hvem er vi?</a></li>
                 <li class="menupunkt">
                     <a href="vores-hunde" class="menuer">Vores hunde</a><span onclick="navUL('1')"><img
-                                src="img/pil_ned.svg" id="pilned1" alt="Pil ned ikon"></span>
+                            src="img/pil_ned.svg" id="pilned1" alt="Pil ned ikon"></span>
                     <ul id="ulListe1">
                         <li><a href="vores-hunde">Hundeprofiler</a></li>
                     </ul>
                 </li>
                 <li class="menupunkt">
-                    <a href="kobsprocessen" class="menuer">Køb hund</a><span onclick="navUL('2')"><img src="img/pil_ned.svg"
-                                id="pilned2" alt="Pil ned ikon"></span>
+                    <a href="kobsprocessen" class="menuer">Køb hund</a><span onclick="navUL('2')"><img
+                            src="img/pil_ned.svg" id="pilned2" alt="Pil ned ikon"></span>
                     <ul id="ulListe2">
                         <li><a href="kobsprocessen#krav">Hvad skal der til?</a></li>
                         <li><a href="kobsprocessen#venteliste-kuld">Venteliste & kommende kuld</a></li>
                     </ul>
                 </li>
                 <li class="menupunkt">
-                    <a href="faq" class="menuer">Råd og vejledning</a><span onclick="navUL('3')"><img src="img/pil_ned.svg"
-                                id="pilned3" alt="Pil ned ikon"></span>
+                    <a href="faq" class="menuer">Råd og vejledning</a><span onclick="navUL('3')"><img
+                            src="img/pil_ned.svg" id="pilned3" alt="Pil ned ikon"></span>
                     <ul id="ulListe3">
                         <li><a href="faq">FAQ</a></li>
                         <li><a href="404">Foder</a></li>
@@ -117,47 +117,58 @@
                                     hund.
                                 </p>
                             </div>
-                            <details class="hundeinfodetails">
-                                <summary class="ekstrainfohunde"><i class="fas fa-info-circle"></i>Ekstra info</summary>
-                                <div class="semeredata">
-                                    <div class="andendata">
-                                        <i class="fas fa-venus"></i>
-                                        <p><span>Mor</span><br>Roosje Beerenbulls</p>
-                                    </div>
-                                    <div class="andendata">
-                                        <i class="fas fa-mars"></i>
-                                        <p><span>Far</span><br>Gold-Sierra Quintino Frenske</p>
-                                    </div>
-                                    <div class="andendata">
-                                        <i class="fas fa-heartbeat"></i>
-                                        <p><span>
-                                                Sundhedsoplysninger</span><br>Patella luxation H/V: Grad 0/0
-                                            (09.01.2020)</p>
-                                    </div>
-                                    <div class="andendata">
-                                        <i class="fas fa-hashtag"></i>
-                                        <p><span>
-                                                DKK Registreringsnr</span><br>09320/2019</p>
-                                    </div>
-                                    <div class="udstillinghund">
-                                        <i class="fas fa-award"></i>
-                                        <p>Er udstillet og avlsgodkendt.
-                                            <br>03.11.2019 Herning
-                                            <br><strong>EXCELLENT</strong> med CK, 2. plads. JR. CERT,
-                                            <br>
-                                            Kritik: 11 mdr. gammel han af udmærket type, maskulint velproportioneret
-                                            hoved, herligt
-                                            bredt,
-                                            vel ansatte øre, korrekte øjne, godt næseparti, korrekt underbid, kraftig
-                                            hals, veludviklet
-                                            brystparti med god bredde, velansatte ben, korrekt karpe, god underlinie,
-                                            herlig brystkasse,
-                                            acceptabel vinklet bag. Godt kryds, herlige frie bevægelser, herlig pels og
-                                            farve. Velvist.
-                                        </p>
+                            <a id="infoBtn" href='#'><i class="fa fa-info-circle"></i>Ekstra info</a>
+                            <div id="infoModal" class="info_modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <div class="semeredata">
+                                        <div class="andendata">
+                                            <i class="fas fa-venus"></i>
+                                            <p><span>Mor</span><br>Roosje Beerenbulls</p>
+                                        </div>
+                                        <div class="andendata">
+                                            <i class="fas fa-mars"></i>
+                                            <p><span>Far</span><br>Gold-Sierra Quintino Frenske</p>
+                                        </div>
+                                        <div class="andendata">
+                                            <i class="fas fa-heartbeat"></i>
+                                            <p><span>
+                                                    Sundhedsoplysninger</span><br>Patella luxation H/V: Grad 0/0
+                                                (09.01.2020)</p>
+                                        </div>
+                                        <div class="andendata">
+                                            <i class="fas fa-hashtag"></i>
+                                            <p><span>
+                                                    DKK Registreringsnr</span><br>09320/2019</p>
+                                        </div>
+                                        <div class="udstillinghund">
+                                            <i class="fas fa-award"></i>
+                                            <p>Er udstillet og avlsgodkendt.
+                                                <br>03.11.2019 Herning
+                                                <br><strong>EXCELLENT</strong> med CK, 2. plads. JR. CERT,
+                                                <br>
+                                                Kritik: 11 mdr. gammel han af udmærket type, maskulint velproportioneret
+                                                hoved, herligt
+                                                bredt,
+                                                vel ansatte øre, korrekte øjne, godt næseparti, korrekt underbid,
+                                                kraftig
+                                                hals, veludviklet
+                                                brystparti med god bredde, velansatte ben, korrekt karpe, god
+                                                underlinie,
+                                                herlig brystkasse,
+                                                acceptabel vinklet bag. Godt kryds, herlige frie bevægelser, herlig pels
+                                                og
+                                                farve. Velvist.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </details>
+                            </div>
+                            
+
+
                         </div>
                     </div>
                 </div>
@@ -192,49 +203,56 @@
                             <div class="hundeinfoom">
                                 <p class="hunde_tekst">Aya er den mildeste og sødeste lille tæve. Hun er altid glad og
                                     fuld af spilopper. Vi ser
-                                    hende ofte drille de andre hunde til leg. Derudover er hun en kærlig lille hyggehund, som
+                                    hende ofte drille de andre hunde til leg. Derudover er hun en kærlig lille
+                                    hyggehund, som
                                     elsker at blive kløet bag de store ører.
                                 </p>
                             </div>
                             <details class="hundeinfodetails">
-                                <summary class="ayaekstrahunde"><i class="fas fa-info-circle orangeting"></i>Ekstra info
-                                </summary>
-                                <div class="semeredata">
-                                    <div class="andendata">
-                                        <i class="fas fa-venus orangeting"></i>
-                                        <p><span>Mor</span><br>Joker Face's Born Bobbi
-                                            Bracelet</p>
+                            <summary class="ekstrainfohunde orangeee"><i
+                                class="fas fa-info-circle orangeting"></i>Ekstra info</summary>
+                                    <div class="semeredata">
+                                        <div class="andendata">
+                                            <i class="fas fa-venus orangeting"></i>
+                                            <p><span>Mor</span><br>Roosje Beerenbulls</p>
+                                        </div>
+                                        <div class="andendata">
+                                            <i class="fas fa-mars orangeting"></i>
+                                            <p><span>Far</span><br>Gold-Sierra Quintino Frenske</p>
+                                        </div>
+                                        <div class="andendata">
+                                            <i class="fas fa-heartbeat orangeting"></i>
+                                            <p><span>
+                                                    Sundhedsoplysninger</span><br>Patella luxation H/V: Grad 0/0
+                                                (09.01.2020)</p>
+                                        </div>
+                                        <div class="andendata">
+                                            <i class="fas fa-hashtag orangeting"></i>
+                                            <p><span>
+                                                    DKK Registreringsnr</span><br>09320/2019</p>
+                                        </div>
+                                        <div class="udstillinghund">
+                                            <i class="fas fa-award orangeting"></i>
+                                            <p>Er udstillet og avlsgodkendt.
+                                                <br>03.11.2019 Herning
+                                                <br><strong>EXCELLENT</strong> med CK, 2. plads. JR. CERT,
+                                                <br>
+                                                Kritik: 11 mdr. gammel han af udmærket type, maskulint velproportioneret
+                                                hoved, herligt
+                                                bredt,
+                                                vel ansatte øre, korrekte øjne, godt næseparti, korrekt underbid,
+                                                kraftig
+                                                hals, veludviklet
+                                                brystparti med god bredde, velansatte ben, korrekt karpe, god
+                                                underlinie,
+                                                herlig brystkasse,
+                                                acceptabel vinklet bag. Godt kryds, herlige frie bevægelser, herlig pels
+                                                og
+                                                farve. Velvist.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="andendata">
-                                        <i class="fas fa-mars orangeting"></i>
-                                        <p><span>Far</span><br>Joker Face's I`m Ice
-                                            Jack</p>
-                                    </div>
-                                    <div class="andendata">
-                                        <i class="fas fa-heartbeat orangeting"></i>
-                                        <p><span>
-                                                Sundhedsoplysninger</span><br>Patella
-                                            luxation H/V: Grad 0/0 <br>(21.05.2020))</p>
-                                    </div>
-                                    <div class="andendata">
-                                        <i class="fas fa-hashtag orangeting"></i>
-                                        <p><span>
-                                                DKK Registreringsnr</span><br>09552/2019</p>
-                                    </div>
-                                    <div class="udstillinghund">
-                                        <i class="fas fa-award orangeting"></i>
-                                        <p>Er udstillet og avlsgodkendt.
-                                            <br>09.02.2020 Fredericia
-                                            <br><strong>EXCELLENT</strong> med CK, 2. plads. JR. CERT,
-                                            <br>
-                                            Kritik: 9 mdr. velbygget brindle tæve, velformet hoved, mørke runde øjne,
-                                            stram
-                                            underkæbe, god karpet ryglinje, velvinklet, lette bevægelser som er
-                                            racetypiske.
-                                        </p>
-                                    </div>
-                                </div>
-                            </details>
+                                </details>
                         </div>
                     </div>
                 </div>
@@ -313,7 +331,7 @@
         <!-- Sektion 3, Raceoversigt-->
         <div class="section">
             <h3 class="fejl-h2">Kommer snart:</h3>
-            <h4 class="fejl-h3">Raceoversigt - fransk bulldog</h4>
+            <h4 class="fejl-h3">Raceoversigt - Fransk bulldog</h4>
             <img src="img/404-billede.png" loading="lazy" alt="Staffordshire bull terrier hvalpe"
                 class="fejl-billedehunde">
         </div>
@@ -401,9 +419,8 @@
         </section>
         <!-- Sektion 5, Raceoversigt Staffordshire bull terrier Buffy -->
         <div class="section">
-            <h2 class="fejl-h2">404</h2>
-            <h3 class="fejl-h3">Kommer snart:</h3>
-            <h4 class="fejl-h4">Raceoversigt - Staffordshire Bull Terrier</h4>
+            <h3 class="fejl-h2">Kommer snart:</h3>
+            <h4 class="fejl-h3">Raceoversigt - Staffordshire Bull Terrier</h4>
             <img src="img/404-billede.png" loading="lazy" alt="Staffordshire bull terrier hvalpe"
                 class="fejl-billedehunde">
         </div>
@@ -463,7 +480,19 @@
             </footer>
         </section>
     </main>
+
+    <!-- Til at style slidepilene -->
+    <style>
+        .fp-controlArrow.fp-next {
+            right: 5% !important;
+        }
+
+        .fp-controlArrow.fp-prev {
+            left: 5% !important;
+        }
+    </style>
     <!-- JavaScript -->
+    <script src="javascript/modal.js"></script>
     <script src="javascript/fullpage.js"></script>
     <script src="javascript/app.js"></script>
     <script>
